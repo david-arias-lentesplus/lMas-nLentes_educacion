@@ -34,7 +34,7 @@ gulp.task('sass', function() {
         }}))
         .pipe(sass({
             /* output style : nested | compact | expanded | compressed */
-            outputStyle: 'expanded'
+            outputStyle: 'compressed'
         }))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 5 versions'],

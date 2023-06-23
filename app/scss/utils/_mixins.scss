@@ -1,0 +1,8 @@
+
+// TRASITIONS
+@mixin transitionAll( $secs ) {
+    -webkit-transition: all $secs ease-in-out;
+    -moz-transition: all $secs ease-in-out;
+    -o-transition: all $secs ease-in-out;
+    transition: all $secs ease-in-out;
+}

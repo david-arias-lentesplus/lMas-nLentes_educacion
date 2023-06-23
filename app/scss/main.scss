@@ -1,4 +1,53 @@
 
+@import "base/reset";
+
+
 body {
     background: #f0f0f0;
+}
+
+// MIXINS
+@import "utils/grid-mixns";
+@import "utils/mqueries";
+@import "utils/mixins";
+
+
+// BASE
+@import "utils/vars";
+
+// Grid system
+@import "base/grid-system";
+
+// = = = = = = = = 
+#headerWrap {
+    .headerCont {
+        width: 100vw;
+        height: 177px;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            filter: grayscale(0.5);
+            opacity: 0.5;
+        }
+    }
+}
+#footerWrap {
+    .footerCont {
+        width: 100vw;
+        height: 527px;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            filter: grayscale(0.5);
+            opacity: 0.5;
+        }
+    }
 }
