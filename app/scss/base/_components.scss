@@ -21,6 +21,7 @@ h1, h2, h3 {
 // BODY
 p, i {
     font-family: var( --font_body );
+    line-height: 1.3;
 }
 .bodyTxt {
     color: var( --color_text );

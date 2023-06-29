@@ -1,4 +1,11 @@
 
+// Phone Mediaquery
+@mixin media_phone() {
+	@media (max-width: 460px ) {
+		@content;
+	}
+}
+
 // TRASITIONS
 @mixin transitionAll( $secs ) {
     -webkit-transition: all $secs ease-in-out;
@@ -6,6 +13,8 @@
     -o-transition: all $secs ease-in-out;
     transition: all $secs ease-in-out;
 }
+
+// BEFORE BG
 @mixin bgAllpage( $color ) {
     position: relative;
 
@@ -21,3 +30,5 @@
         z-index: -1;
     }
 }
+
+

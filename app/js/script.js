@@ -2,13 +2,22 @@
 console.log( "init script base" );
 
 function template() {
-    
-    $(function(){
-        $("#headerWrap").load("/components/header.html"); 
-    });
-    $(function(){
-        $("#footerWrap").load("/components/footer.html"); 
-    });
+
+    let prom = new Promise( (resolve,reject) => {
+
+        $(function(){
+            $("#headerWrap").load("/components/header.html"); 
+        });
+        $(function(){
+            $("#footerWrap").load("/components/footer.html"); 
+        });
+
+        setTimeout(() => {
+            resolve( true )
+        }, 300);
+
+    })
+    return prom;
 
 }
 
@@ -19,17 +28,19 @@ function currLoja() {
         const body = document.body;
     
         if( body.className.includes("lentesplus") ) {
-            // console.log(`Body: lentesplus`);
+            console.log(`Body: lentesplus`);
             body.classList.add("lentesplus");
         } else if( body.className.includes("newlentes") ) {
-            // console.log(`Body: newlentes`);
+            console.log(`Body: newlentes`);
             body.classList.add("newlentes");
         } else {
-            // console.log(`Body: N/A`);
+            console.log(`Body: N/A`);
             body.classList.add("lentesplus");
         }
 
-        resolve( true )
+        setTimeout(() => {
+            resolve( true )
+        }, 3000);
 
     })
     return prom;
@@ -65,9 +76,8 @@ function changePage( elem ) {
 
 // functions
 
-template();
-currLoja().then( () => {
-    setTimeout(() => {
+template().then( () => {
+    currLoja().then( () => {
         changeLoja();
-    }, 150);
+    });
 });

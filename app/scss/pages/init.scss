@@ -8,8 +8,8 @@
 
 .cardItm {
     border: thin solid var( --color_main );
-    padding: $remSize / 2;
-    border-radius: $remSize / 2;
+    padding: calc($remSize / 2);
+    border-radius: calc($remSize / 2);
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -26,7 +26,7 @@
         color: var( --color_text );
         .ttl {
             font-weight: 800;
-            margin: 0 0 $remSize / 2 0;
+            margin: 0 0 calc($remSize / 2) 0;
         }
     }
 }
