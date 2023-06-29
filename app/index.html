@@ -21,8 +21,13 @@
 
         <script>
             $(function(){
-                $("#contentWrap").load("/pages/init.html"); 
+                // $("#contentWrap").load("/pages/init.html"); 
+                $("#contentWrap").load("/pages/leer_formula.html"); 
             });
+
+            document.getElementById("headerWrap").addEventListener("click", () => {
+                $("#contentWrap").load("/pages/init.html"); 
+            })
         </script>
 
     </body>

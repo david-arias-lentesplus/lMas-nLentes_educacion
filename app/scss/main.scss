@@ -3,26 +3,66 @@
 
 
 body {
-    background: #f0f0f0;
+    background: white;
 }
 
-// MIXINS
-@import "utils/grid-mixns";
-@import "utils/mqueries";
-@import "utils/mixins";
-
-
-// BASE
-@import "utils/vars";
-
-// Grid system
-@import "base/grid-system";
+// PAGE BASE
+@import "page-base";
 
 // = = = = = = = = 
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,600;0,800;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@200;400;600;800&display=swap');
+
+:root {
+    --font_title: 'Gilroy','Montserrat', sans-serif;
+    --font_body: 'Asap', sans-serif;
+}
+
+body {
+    &.lentesplus {
+        --font_title: 'Gilroy','Montserrat', sans-serif;
+        --font_body: 'Asap', sans-serif;
+
+        font-family: var( --font_title );
+    }
+    &.newlentes {
+        --font_title: 'Open Sans', sans-serif;
+        --font_body: 'Open Sans', sans-serif;
+
+        font-family: var( --font_title );
+    }
+}
+// = = = = = = = = 
+body.lentesplus {
+    .headerCont_lentesplus,
+    .footerCont_lentesplus {
+        display: block;
+    }
+    .headerCont_newlentes,
+    .footerCont_newlentes {
+        display: none;
+    }
+    
+
+}
+body.newlentes {
+    .headerCont_lentesplus,
+    .footerCont_lentesplus {
+        display: none;
+    }
+    .headerCont_newlentes,
+    .footerCont_newlentes {
+        display: block;
+    }
+}
 #headerWrap {
     .headerCont {
         width: 100vw;
-        height: 177px;
+        height: 157px;
         position: relative;
         overflow: hidden;
 
@@ -32,13 +72,20 @@ body {
             transform: translateX(-50%);
             filter: grayscale(0.5);
             opacity: 0.5;
+
+            &.header_lg {
+                display: block;
+            }
+            &.header_sm {
+                display: none;
+            }
         }
     }
 }
 #footerWrap {
     .footerCont {
         width: 100vw;
-        height: 527px;
+        height: 575px;
         position: relative;
         overflow: hidden;
 
@@ -48,6 +95,78 @@ body {
             transform: translateX(-50%);
             filter: grayscale(0.5);
             opacity: 0.5;
+
+            &.header_lg {
+                display: block;
+            }
+            &.header_sm {
+                display: none;
+            }
         }
     }
 }
+
+
+// Select LOJA
+.selectLoja {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 1000;
+
+    .wrap {
+        background: white;
+        width: 185px;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        position: relative;
+        box-shadow: 5px 5px 10px rgba(0,0,255,0.2);
+
+        &.wrap:before {
+            content: "";
+            position: absolute;
+            width: 90px;
+            height: 40px;
+            background: #C6DFF4;
+            border-radius: $remSize / 2;
+            z-index: 0;
+            top: 8px;
+            left: 8px;
+
+            @include transitionAll( 300ms );
+        }
+    
+        button {
+            background: none;
+            border: none;
+            width: 90px;
+            box-sizing: border-box;
+            height: 40px;
+            background: transparent;
+            border-radius: $remSize / 2;
+            position: relative;
+            z-index: 10;
+            cursor: pointer;
+        }
+    }
+
+}
+body.lentesplus {
+    .selectLoja {
+        .wrap {
+            &.wrap:before {
+                left: $remSize / 2;
+            }
+        }
+    }
+}
+body.newlentes {
+    .selectLoja {
+        .wrap {
+            &.wrap:before {
+                left: 103px;
+            }
+        }
+    }
+}
+// = = = = = = = = 
