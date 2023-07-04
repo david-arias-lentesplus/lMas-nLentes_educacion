@@ -19,6 +19,12 @@
 
 .page_pwaPg {
     margin-bottom: 60px;
+
+    @include media_phone() {
+        padding-right: calc( $remSize / 2);
+        padding-left: calc( $remSize / 2);
+        box-sizing: border-box;
+    }
 }
 
 // components
