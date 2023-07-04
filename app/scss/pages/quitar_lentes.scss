@@ -6,8 +6,7 @@
 
 // = = = = = = = =
 
-.page-poner_lentes {
-
+.page-quitar_lentes {
     .topBanner {
         .row {
             align-items: center;
@@ -46,87 +45,6 @@
                 .bodyTxt {
                     margin: 0 0 calc( $remSize ) 0
                 }
-            }
-        }
-    }
-
-    .adviceBox {
-        position: relative;
-
-        .topTtl {
-            position: absolute;
-            top: -52px;
-            left: 0px;
-            padding: calc($remSize) calc($remSize) calc($remSize * 2) calc($remSize);
-            background: #E9F6FF;
-            border-radius: $remSize ;
-
-            &:before {
-                content: "";
-                position: absolute;
-                width: 0px;
-                height: 0;
-                background: transparent;
-                top: 8px;
-                right: -49px;
-                border-left: 25px solid #e9f6ff;
-                border-bottom: 25px solid #e9f6ff;
-                border-top: 25px solid rgba(0,0,0,0);
-                border-right: 25px solid rgba(0,0,0,0);
-            }
-        }
-
-        .midBox {
-            background: #E9F6FF;
-            border-radius: $remSize ;
-            position: relative;
-
-            @include media_phone() {
-                padding: $remSize;
-            }
-            
-            .row {
-                align-items: center;
-
-                .bodyTxt {
-                    padding: $remSize;
-
-                    @include media_phone() {
-                        padding: 0;
-                        margin: 0 0 $remSize 0;
-                    }
-                }
-
-                .img {
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    
-                    @include media_phone() {
-                        position: relative;
-                        top: unset;
-                        transform: translateY(0%);
-                        text-align: center;
-                    }
-                }
-            }
-
-        }
-
-        &.adviceBox2 {
-            margin: calc($remSize * 6) 0 0 0;
-
-            .topTtl {
-                background: #F0EFFF;
-    
-                &:before {
-                    border-left: 25px solid #F0EFFF;
-                    border-bottom: 25px solid #F0EFFF;
-                }
-            }
-    
-            .midBox {
-                background: #F0EFFF;
             }
         }
     }
@@ -281,7 +199,7 @@
 
                             @include media_phone() {
                                 img {
-                                    width: 100%;
+                                    width: 90%;
                                 }
                             }
                         }
@@ -307,35 +225,13 @@
                         @include media_phone() {
                             width: 100%;
                         }
-                    }
-                    .stepDeco {
-                        width: calc( 33%);
 
-                        @include media_phone() {
-                            display: none;
-                        }
-                    }
-                }
-            }
-            &.step_6 {
-                .stepBox {
-                    align-items: center;
-                    justify-content: center;
-
-                    .textBox {
-                        width: calc( 33%);
-                        text-align: right;
-
-                        @include media_phone() {
-                            text-align: center;
-                            width: 100%;
-                        }
-                    }
-                    .stepImg {
-                        width: calc( 33%);
-
-                        @include media_phone() {
-                            width: 100%;
+                        div {
+                            @include media_phone() {
+                                img {
+                                    width: 90%;
+                                }
+                            }
                         }
                     }
                     .stepDeco {
@@ -361,5 +257,5 @@
             }
         }
     }
-
 }
+
