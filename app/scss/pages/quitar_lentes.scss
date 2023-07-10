@@ -38,7 +38,7 @@
                     margin: 0 0 calc( $remSize ) 0;
 
                     span {
-                        color: #9F98E2;
+                        color: var(--color_textAlt);
                     }
                 }
 
@@ -64,7 +64,7 @@
                     .h2Ttl {
                         margin: 0 0 $remSize 0;
                         b {
-                            color: #9F98E2;
+                            color: var(--color_textAlt);
                         }
                     }
                 }
@@ -258,4 +258,3 @@
         }
     }
 }
-

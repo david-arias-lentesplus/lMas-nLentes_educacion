@@ -17,25 +17,6 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@200;400;600;800&display=swap');
 
-:root {
-    --font_title: 'Gilroy','Montserrat', sans-serif;
-    --font_body: 'Asap', sans-serif;
-}
-
-body {
-    &.lentesplus {
-        --font_title: 'Gilroy','Montserrat', sans-serif;
-        --font_body: 'Asap', sans-serif;
-
-        font-family: var( --font_title );
-    }
-    &.newlentes {
-        --font_title: 'Open Sans', sans-serif;
-        --font_body: 'Open Sans', sans-serif;
-
-        font-family: var( --font_title );
-    }
-}
 // = = = = = = = = 
 body.lentesplus {
     .headerCont_lentesplus,

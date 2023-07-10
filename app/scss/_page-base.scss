@@ -17,6 +17,24 @@
 
 // = = = = = = = = 
 
+:root {
+    --font_title: 'Gilroy','Montserrat', sans-serif;
+    --font_body: 'Asap', sans-serif;
+}
+
+.lentesplus {
+    --font_title: 'Gilroy','Montserrat', sans-serif;
+    --font_body: 'Asap', sans-serif;
+
+    font-family: var( --font_title );
+}
+.newlentes {
+    --font_title: 'Open Sans', sans-serif;
+    --font_body: 'Open Sans', sans-serif;
+
+    font-family: var( --font_title );
+}
+
 .page_pwaPg {
     margin-bottom: 60px;
 
