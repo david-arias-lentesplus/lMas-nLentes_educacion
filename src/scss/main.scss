@@ -1,0 +1,48 @@
+
+@import "./shared/reset";
+
+body {
+    background: white;
+}
+
+
+
+// DEBUGGER
+
+.page_pwaPg {
+    margin-bottom: 120px;
+
+    @media (max-width: 460px ) {
+        padding-right: calc( 16px / 2);
+        padding-left: calc( 16px / 2);
+        box-sizing: border-box;
+	}
+
+}
+
+.backToHome {
+    position: fixed;
+    z-index: 200;
+    bottom: 0;
+    left: 0;
+
+    button {
+        display: flex;
+        align-items: center;
+        border: none;
+        background: #e9f6ff;
+        font-size: 16px;
+        color: #2d668c;
+        padding: 16px 32px 16px 16px;
+        border-radius: 0 0 16px 0;
+        cursor: pointer;
+
+        img {
+            width: 24px;
+        }
+
+        span {
+            margin: 0 0 0 8px;
+        }
+    }
+}

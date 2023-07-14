@@ -1,0 +1,30 @@
+
+// = = = = = = = = 
+
+// PAGE BASE
+@import "../lojas/page-base-lp";
+
+// = = = = = = = =
+
+
+.page-init {
+
+    .top {
+        background: var(--color_main);
+        padding: $remSize;
+        border-radius: calc( $remSize / 2 );
+        margin: 0 0 calc($remSize) 0;
+        h2 {
+            color: white;
+        }
+    }
+
+    .linkLists {
+        ul {
+            li {
+                padding: calc($remSize / 2) $remSize;
+                margin: 0 0 calc($remSize / 2) 0;
+            }
+        }
+    }
+}

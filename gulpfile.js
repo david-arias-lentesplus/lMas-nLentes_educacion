@@ -24,11 +24,34 @@ gulp.task('default', function() {
     } )
 });
 
+
+// IMGS task
+gulp.task('imgs_png', function() {
+    log(color('= = = = Watch IMAGES PNG changes = = = =', 'YELLOW'));
+
+    return gulp.src('./src/imgs/**/*.png')
+        .pipe( gulp.dest('./app/img/') );
+})
+gulp.task('imgs_jpg', function() {
+    log(color('= = = = Watch IMAGES JPG changes = = = =', 'YELLOW'));
+
+    return gulp.src('./src/imgs/**/*.jpg')
+        .pipe( gulp.dest('./app/img/') );
+})
+
+// HTML task
+gulp.task('html', function() {
+    log(color('= = = = Watch HTML changes = = = =', 'YELLOW'));
+
+    return gulp.src('./src/**/*.html')
+        .pipe( gulp.dest('./app/') );
+})
+
 // SASS task
 gulp.task('sass', function() {
     log(color('= = = = Watch SASS changes = = = =', 'GREEN'));
 
-    return gulp.src('./app/scss/**/*.scss')
+    return gulp.src('./src/scss/**/*.scss')
         .pipe(plumber({ errorHandler: function(err) {
             log( color(err.message, 'RED') );
         }}))
@@ -54,11 +77,16 @@ gulp.task('serve', function() {
         server: "./app"
     });
 
-    // HTML watch
+    // IMGS task
+    gulp.watch("src/imgs/**/*.png", gulp.series('imgs_png'));
+    gulp.watch("src/imgs/**/*.jpg", gulp.series('imgs_jpg'));
+    
+    // html watch
+    gulp.watch("src/**/*.html", gulp.series('html'));
     gulp.watch("app/**/*.html").on('change', browserSync.reload);
     
     // sass watch
-    gulp.watch("app/scss/**/*.scss", gulp.series('sass'));
+    gulp.watch("src/scss/**/*.scss", gulp.series('sass'));
 
     // JS watch
     gulp.watch("app/js/**/*.js").on('change', browserSync.reload);

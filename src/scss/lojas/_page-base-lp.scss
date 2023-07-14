@@ -1,0 +1,46 @@
+
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,600;0,800;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@200;400;600;800&display=swap');
+
+
+// VARS
+:root {
+    // FONTS
+    --font_title: 'Gilroy','Montserrat', sans-serif;
+    --font_body: 'Asap', sans-serif;
+
+    font-family: var( --font_title );
+
+    // COLORS
+    --color_main: #80ACE0;
+    --color_text: #2D668C;
+
+    --color_textAlt: #9F98E2;
+    --color_textAlt2: #E27D7D;
+
+    --color_link: #007BFF;
+}
+
+// STRUCTURE
+
+// BASE
+@import "../utils/vars";
+
+// MIXINS
+@import "../utils/grid-mixns";
+@import "../utils/mqueries";
+@import "../utils/mixins";
+
+// Grid system
+@import "../shared/grid-system";
+
+// = = = = = = = = 
+
+
+// components
+
+@import "../shared/components";
+
+// = = = = = = = = 

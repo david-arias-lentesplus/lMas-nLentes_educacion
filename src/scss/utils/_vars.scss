@@ -1,0 +1,24 @@
+
+// root Size for fonts-size
+$remSize: 16px;
+
+// Grid break points
+$grid_breaks: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+);
+
+// container widths
+$container_maxWs: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px
+);
+
+// Grid specs
+$grid-cols: 12;
+$grid_w_Gutter: 32px;

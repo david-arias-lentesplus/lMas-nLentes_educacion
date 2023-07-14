@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecto educacion lentesplus - newLentes</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/pages/daltonismo.css">
+</head>
+<body>
+
+    <div class="container_pwaPg page_pwaPg page-daltonismo">
+        
+        <div class="topBanner">
+            <div class="row">
+                <div class="col_xl_6">
+                    <div class="text">
+                        <h1 class="h1Ttl">
+                            ¿Qué es el <br><span>daltonismo?</span>
+                        </h1>
+                        <p class="bodyTxt"><b>El daltonismo es la dificultad de ver colores como el rojo o el verde,</b> y existen los casos más graves, en los que la persona no ve los colores. Esta dificultad tiene un origen genético, pero también puede provenir de alguna lesión ocular o neurológica.</p>
+                    </div>
+                </div>
+                <div class="col_xl_6">
+                    <div class="imgBanner">
+                        <img src="/img/pages/daltonismo/topBanner.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="midText">
+            <div class="row">
+                <div class="col_xl_10 offset_xl_1">
+                    <p class="bodyTxt">Caracterizado por una falla en el desarrollo de uno o más de los tres juegos de <b>conos que reconocen los colores y como el problema es genético,</b> está ligado al cromosoma X, es decir, se presenta en la mayoría de los hombres porque el sexo masculino tiene solo uno. cromosoma X, mientras que el daltonismo en las mujeres es bastante raro porque las mujeres tienen dos cromosomas X.</p>
+                    <p class="bodyTxt">Desafortunadamente, <b>el daltonismo no tiene cura</b> y, por lo tanto, el diagnóstico temprano puede ayudar mucho a los niños a adaptarse.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ishiBanner">
+            <div class="row">
+                <div class="col_xl_6">
+                    <div class="imgBanner">
+                        <img src="/img/pages/daltonismo/ishihara.png" alt="">
+                    </div>
+                </div>
+                <div class="col_xl_6">
+                    <div class="text">
+                        <h2 class="h2Ttl">
+                            Prueba de color de Ishihara
+                        </h2>
+                        <p class="bodyTxt">En 1917 el Dr. Shinobu Ishihara, profesor de la Universidad de Tokio creó y desarrolló la prueba más conocida como Ishihara Color Test.</p>
+                        <p class="bodyTxt">Este examen es un conjunto de tarjetas impresas que consisten en números o formas dibujadas por círculos de colores que forman un círculo más grande. Estos formularios se presentan al paciente durante el examen y, de acuerdo con las respuestas, se crea un diagnóstico del grado de daltonismo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="adviceBox">
+            <div class="topTtl">
+                <p class="h2Ttl">Aviso:</p>
+            </div>
+            <div class="midBox">
+                <div class="row">
+                    <div class="col_xl_9">
+                        <p class="bodyTxt">
+                            Esta prueba consta de varias imágenes impresas en tarjetas y debe ser realizada en <b>el consultorio de su médico por su oftalmólogo.</b> Vale la pena recordar que las imágenes que se ven en <b>una pantalla digital pueden cambiar, ya que cada pantalla/dispositivo puede tener una configuración diferente.</b>
+                        </p>
+                    </div>
+                    <div class="col_xl_3">
+                        <div class="img">
+                            <img src="/img/pages/daltonismo/pcAdvice.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ishiharaTestWrap">
+            <div class="ishiharaTest">
+                <div class="init steps steps_active" id="dalto_step-init">
+                    <div class="imgWrap">
+                        <img src="/img/pages/daltonismo/sideTest.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="bodyTxt">
+                            Realiza la prueba de la vista de Ishihara para comprobar el daltonismo*.
+                        </p>
+                        <p class="bodyTxt">
+                            También se conoce como la prueba de la placa de Ishihara.
+                        </p>
+                        <button class="btn" id="dalto_initTest">Comenzar Test</button>
+                        <div class="bodyTxt">*Ten en cuenta que esta prueba es realizada con fines ilustrativos. para realizar una prueba verídica debes visitar tu optómetra de confianza. </div>
+                    </div>
+                </div>
+                <div class="test steps" id="dalto_step-test">
+                    <form>
+                        <div class="step step_1 active" id="dalto-step_1">
+                            <div class="top">
+                                <p class="bodyTxt">Tienes que introducir el número de las opciones que veas en cada disco. Si no puedes ver ninguno, selecciona la opción de “no veo número”</p>
+                            </div>
+                            <div class="mid">
+                                <div class="imgIshi">
+                                    <img src="/img/pages/daltonismo/imgDaltonismo1.jpg" alt="">
+                                </div>
+                                <div class="formIshi">
+                                    <div class="errorText" id="errorText_1">
+                                        Selecciona una opcion para continuar
+                                    </div>
+                                    <div class="fieldform">
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step1" id="step1_1" value="8">
+                                            <label for="step1_1">8</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step1" id="step1_2" value="3">
+                                            <label for="step1_2">3</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step1" id="step1_3" value="2">
+                                            <label for="step1_3">2</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step1" id="step1_4" value="No">
+                                            <label for="step1_4">No veo número</label>
+                                        </div>
+                                    </div>
+                                    <button class="btn dalto_stepBtn" id="dalto_stepBtn_1" data-step="1" type="button">Continuar</button>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="page">
+                                    1 / 9
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step step_2" id="dalto-step_2">
+                            <div class="top">
+                                <p class="bodyTxt">Tienes que introducir el número de las opciones que veas en cada disco. Si no puedes ver ninguno, selecciona la opción de “no veo número”</p>
+                            </div>
+                            <div class="mid">
+                                <div class="imgIshi">
+                                    <img src="/img/pages/daltonismo/imgDaltonismo2.jpg" alt="">
+                                </div>
+                                <div class="formIshi">
+                                    <div class="errorText" id="errorText_2">
+                                        Selecciona una opcion para continuar
+                                    </div>
+                                    <div class="fieldform">
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step2" id="step2_1" value="8">
+                                            <label for="step2_1">8</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step2" id="step2_2" value="6">
+                                            <label for="step2_2">6</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step2" id="step2_3" value="9">
+                                            <label for="step2_3">9</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step2" id="step2_4" value="No">
+                                            <label for="step2_4">No veo número</label>
+                                        </div>
+                                    </div>
+                                    <button class="btn dalto_stepBtn" id="dalto_stepBtn_2" data-step="2" type="button">Continuar</button>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="page">
+                                    2 / 9
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step step_3" id="dalto-step_3">
+                            <div class="top">
+                                <p class="bodyTxt">Tienes que introducir el número de las opciones que veas en cada disco. Si no puedes ver ninguno, selecciona la opción de “no veo número”</p>
+                            </div>
+                            <div class="mid">
+                                <div class="imgIshi">
+                                    <img src="/img/pages/daltonismo/imgDaltonismo3.jpg" alt="">
+                                </div>
+                                <div class="formIshi">
+                                    <div class="errorText" id="errorText_3">
+                                        Selecciona una opcion para continuar
+                                    </div>
+                                    <div class="fieldform">
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step3" id="step3_1" value="0">
+                                            <label for="step3_1">0</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step3" id="step3_2" value="8">
+                                            <label for="step3_2">8</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step3" id="step3_3" value="6">
+                                            <label for="step3_3">6</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step3" id="step3_4" value="No">
+                                            <label for="step3_4">No veo número</label>
+                                        </div>
+                                    </div>
+                                    <button class="btn dalto_stepBtn" id="dalto_stepBtn_3" data-step="3" type="button">Continuar</button>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="page">
+                                    3 / 9
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step step_4" id="dalto-step_4">
+                            <div class="top">
+                                <p class="bodyTxt">Tienes que introducir el número de las opciones que veas en cada disco. Si no puedes ver ninguno, selecciona la opción de “no veo número”</p>
+                            </div>
+                            <div class="mid">
+                                <div class="imgIshi">
+                                    <img src="/img/pages/daltonismo/imgDaltonismo4.jpg" alt="">
+                                </div>
+                                <div class="formIshi">
+                                    <div class="errorText" id="errorText_4">
+                                        Selecciona una opcion para continuar
+                                    </div>
+                                    <div class="fieldform">
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step4" id="step4_1" value="12">
+                                            <label for="step4_1">12</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step4" id="step4_2" value="15">
+                                            <label for="step4_2">15</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step4" id="step4_3" value="13">
+                                            <label for="step4_3">13</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step4" id="step4_4" value="No">
+                                            <label for="step4_4">No veo número</label>
+                                        </div>
+                                    </div>
+                                    <button class="btn dalto_stepBtn" id="dalto_stepBtn_4" data-step="4" type="button">Continuar</button>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="page">
+                                    4 / 9
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step step_5" id="dalto-step_5">
+                            <div class="top">
+                                <p class="bodyTxt">Tienes que introducir el número de las opciones que veas en cada disco. Si no puedes ver ninguno, selecciona la opción de “no veo número”</p>
+                            </div>
+                            <div class="mid">
+                                <div class="imgIshi">
+                                    <img src="/img/pages/daltonismo/imgDaltonismo5.jpg" alt="">
+                                </div>
+                                <div class="formIshi">
+                                    <div class="errorText" id="errorText_5">
+                                        Selecciona una opcion para continuar
+                                    </div>
+                                    <div class="fieldform">
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step5" id="step5_1" value="14">
+                                            <label for="step5_1">14</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step5" id="step5_2" value="74">
+                                            <label for="step5_2">74</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step5" id="step5_3" value="71">
+                                            <label for="step5_3">71</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step5" id="step5_4" value="No">
+                                            <label for="step5_4">No veo número</label>
+                                        </div>
+                                    </div>
+                                    <button class="btn dalto_stepBtn" id="dalto_stepBtn_5" data-step="5" type="button">Continuar</button>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="page">
+                                    5 / 9
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step step_6" id="dalto-step_6">
+                            <div class="top">
+                                <p class="bodyTxt">Tienes que introducir el número de las opciones que veas en cada disco. Si no puedes ver ninguno, selecciona la opción de “no veo número”</p>
+                            </div>
+                            <div class="mid">
+                                <div class="imgIshi">
+                                    <img src="/img/pages/daltonismo/imgDaltonismo6.jpg" alt="">
+                                </div>
+                                <div class="formIshi">
+                                    <div class="errorText" id="errorText_6">
+                                        Selecciona una opcion para continuar
+                                    </div>
+                                    <div class="fieldform">
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step6" id="step6_1" value="28">
+                                            <label for="step6_1">28</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step6" id="step6_2" value="20">
+                                            <label for="step6_2">20</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step6" id="step6_3" value="29">
+                                            <label for="step6_3">29</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step6" id="step6_4" value="No">
+                                            <label for="step6_4">No veo número</label>
+                                        </div>
+                                    </div>
+                                    <button class="btn dalto_stepBtn" id="dalto_stepBtn_6" data-step="6" type="button">Continuar</button>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="page">
+                                    6 / 9
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step step_7" id="dalto-step_7">
+                            <div class="top">
+                                <p class="bodyTxt">Tienes que introducir el número de las opciones que veas en cada disco. Si no puedes ver ninguno, selecciona la opción de “no veo número”</p>
+                            </div>
+                            <div class="mid">
+                                <div class="imgIshi">
+                                    <img src="/img/pages/daltonismo/imgDaltonismo7.jpg" alt="">
+                                </div>
+                                <div class="formIshi">
+                                    <div class="errorText" id="errorText_7">
+                                        Selecciona una opcion para continuar
+                                    </div>
+                                    <div class="fieldform">
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step7" id="step7_1" value="1">
+                                            <label for="step7_1">1</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step7" id="step7_2" value="7">
+                                            <label for="step7_2">7</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step7" id="step7_3" value="9">
+                                            <label for="step7_3">9</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step7" id="step7_4" value="No">
+                                            <label for="step7_4">No veo número</label>
+                                        </div>
+                                    </div>
+                                    <button class="btn dalto_stepBtn" id="dalto_stepBtn_7" data-step="7" type="button">Continuar</button>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="page">
+                                    7 / 9
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step step_8" id="dalto-step_8">
+                            <div class="top">
+                                <p class="bodyTxt">Tienes que introducir el número de las opciones que veas en cada disco. Si no puedes ver ninguno, selecciona la opción de “no veo número”</p>
+                            </div>
+                            <div class="mid">
+                                <div class="imgIshi">
+                                    <img src="/img/pages/daltonismo/imgDaltonismo8.jpg" alt="">
+                                </div>
+                                <div class="formIshi">
+                                    <div class="errorText" id="errorText_8">
+                                        Selecciona una opcion para continuar
+                                    </div>
+                                    <div class="fieldform">
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step8" id="step8_1" value="51">
+                                            <label for="step8_1">51</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step8" id="step8_2" value="57">
+                                            <label for="step8_2">57</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step8" id="step8_3" value="59">
+                                            <label for="step8_3">59</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step8" id="step8_4" value="No">
+                                            <label for="step8_4">No veo número</label>
+                                        </div>
+                                    </div>
+                                    <button class="btn dalto_stepBtn" id="dalto_stepBtn_8" data-step="8" type="button">Continuar</button>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="page">
+                                    8 / 9
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step step_9" id="dalto-step_9">
+                            <div class="top">
+                                <p class="bodyTxt">Tienes que introducir el número de las opciones que veas en cada disco. Si no puedes ver ninguno, selecciona la opción de “no veo número”</p>
+                            </div>
+                            <div class="mid">
+                                <div class="imgIshi">
+                                    <img src="/img/pages/daltonismo/imgDaltonismo9.jpg" alt="">
+                                </div>
+                                <div class="formIshi">
+                                    <div class="errorText" id="errorText_9">
+                                        Selecciona una opcion para continuar
+                                    </div>
+                                    <div class="fieldform">
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step9" id="step9_1" value="6">
+                                            <label for="step9_1">6</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step9" id="step9_2" value="5">
+                                            <label for="step9_2">5</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step9" id="step9_3" value="8">
+                                            <label for="step9_3">8</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="radio" class="testRad" name="step9" id="step9_4" value="No">
+                                            <label for="step9_4">No veo número</label>
+                                        </div>
+                                    </div>
+                                    <button class="btn dalto_stepBtn" id="dalto_stepBtn_9" data-step="9" type="button">Continuar</button>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="page">
+                                    9 / 9
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="finish steps" id="dalto_step-finish">
+
+                    <div class="fin">
+                        <div class="imgWrap">
+                            <img src="/img/pages/daltonismo/sideTest.png" alt="">
+                        </div>
+                        <div class="text">
+                            <div>
+                                <div class="icon">
+                                    <img id="dalto_testResp-img" src="/img/pages/daltonismo/perfect.png" alt="">
+                                </div>
+                                <h2 class="h2Ttl">Diagnóstico</h2>
+                                <p class="bodyTxt">
+                                    <b id="dalto_testResp-txt">Visión del color normal</b><br> Resultado de la prueba: <span id="dalto_testResp">100 % (18/18)</span>
+                                </p>
+                                <div class="bodyTxt bodyTxtAdvice">*Ten en cuenta que esta prueba es realizada con fines ilustrativos. para realizar una prueba verídica debes visitar tu optómetra de confianza. </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const initTest = document.getElementById( "dalto_initTest" );
+        const initStep = document.getElementById( "dalto_step-init" );
+        const testStep = document.getElementById( "dalto_step-test" );
+        const finishStep = document.getElementById( "dalto_step-finish" );
+
+        const stepBtn = document.querySelectorAll(".dalto_stepBtn")
+
+        initTest.addEventListener("click", function() {
+            initStep.classList.remove("steps_active")
+            testStep.classList.add("steps_active")
+        })
+
+        getValue = ( step ) => {
+            const rads = document.getElementsByName(`step${ step }`);
+            let value = "";
+
+            for (let r = 0; r < rads.length; r++) {
+                const element = rads[r];
+
+                if ( element.checked ) {
+                    value = element.value;
+                }
+            }
+            return value;
+
+        }
+
+        const trueValues = ['3', '8', '6', '12', '74', '29', '7', '57', '5'];
+        const currValues = [];
+
+        const allRads = document.getElementsByClassName( "testRad" );
+        for (let r = 0; r < allRads.length; r++) {
+            const element = allRads[r];
+
+            element.addEventListener("click", () => {
+                console.log( element );
+            })
+        }
+
+        btnValidate = () => {
+
+        }
+        btnValidate();
+
+        getResults = () => {
+            let currPerc = 0;
+            let currCorrect = 0;
+
+            for (let f = 0; f < trueValues.length; f++) {
+                const element = trueValues[f];
+                
+                if (element == currValues[f] ) {
+                    currPerc = currPerc + 11.111111;
+                    currCorrect = currCorrect + 1;
+                }
+            }
+            
+            const testResp_img = document.getElementById("dalto_testResp-img");
+            const testResp_txt = document.getElementById("dalto_testResp-txt");
+            const testResp = document.getElementById("dalto_testResp");
+
+            testResp.innerHTML = `${ Math.round( currPerc ) }% ( ${currCorrect} / 9 )`;
+            if ( currPerc < 100 && currPerc >= 90 ) {
+                testResp_img.setAttribute("src","/img/pages/daltonismo/perfect.png");
+                testResp_txt.innerHTML = "Visión del color normal"
+            } else if ( currPerc <= 89 && currPerc >= 66 ) {
+                testResp_img.setAttribute("src","/img/pages/daltonismo/good.png");
+                testResp_txt.innerHTML = "Ligera deficiencia de visión del color"
+            } else if ( currPerc <= 65 && currPerc >= 44 ) {
+                testResp_img.setAttribute("src","/img/pages/daltonismo/bad.png");
+                testResp_txt.innerHTML = "Moderada deficiencia de visión del color"
+            } else if ( currPerc <= 43 && currPerc >= 0 ) {
+                testResp_img.setAttribute("src","/img/pages/daltonismo/fail.png");
+                testResp_txt.innerHTML = "Severa deficiencia de visión del color"
+            }
+        }
+
+        stepBtn.forEach(element => {
+            element.addEventListener("click", ( evt ) => {
+                const evtStep = evt.target.getAttribute("data-step");
+
+                if ( getValue(evtStep) == '' ) {
+                    document.getElementById(`errorText_${evtStep}`).style.display = "block";
+                    return;
+                } else {
+                    currValues.push( getValue(evtStep) );
+
+                    document.getElementById(`dalto-step_${ parseInt(evtStep)}`).classList.remove("active");
+                    if ( parseInt(evtStep) <= 8 ) {
+                        document.getElementById(`dalto-step_${ parseInt(evtStep) + 1}`).classList.add("active");
+                    } else {
+                        testStep.classList.remove("steps_active");
+                        finishStep.classList.add("steps_active");
+    
+                        getResults();
+                    }
+
+                }
+
+            })
+        });
+
+    </script>
+
+    <!-- DEBUGGER -->
+    <div class="backToHome">
+        <button onclick="location.href = '/'" type="button">
+            <img src="/img/backToList.png" alt="">
+            <span>Volver a lista de páginas</span>
+        </button>
+    </div>
+
+</body>
+</html>

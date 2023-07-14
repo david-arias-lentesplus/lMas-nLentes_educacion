@@ -1,0 +1,53 @@
+
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+
+// VARS
+:root {
+    // FONTS
+    --font_title: 'Open Sans', sans-serif;
+    --font_body: 'Open Sans', sans-serif;
+
+    font-family: var( --font_title );
+
+    // COLORS
+    --color_main: #72B0E6;
+    --color_text: #0B3260;
+    --color_textAlt: #0E8ABA;
+
+    --color_link: #007BFF;
+}
+
+// STRUCTURE
+
+// BASE
+@import "/src/scss/utils/vars";
+
+// MIXINS
+@import "/src/scss/utils/grid-mixns";
+@import "/src/scss/utils/mqueries";
+@import "/src/scss/utils/mixins";
+
+// BASE
+@import "/src/scss/utils/colors";
+
+// Grid system
+@import "/src/scss/shared/grid-system";
+
+// = = = = = = = = 
+
+.page_pwaPg {
+    margin-bottom: 60px;
+
+    @include media_phone() {
+        padding-right: calc( $remSize / 2);
+        padding-left: calc( $remSize / 2);
+        box-sizing: border-box;
+    }
+}
+
+// components
+
+@import "/src/scss/shared/components";
+
+// = = = = = = = = 
