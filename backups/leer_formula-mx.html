@@ -1,0 +1,1569 @@
+<style>
+    .container_pwaPg{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media(min-width: 0)and (max-width: 576px){.container_pwaPg{padding-right:0;padding-left:0}}@media(min-width: 576px){.container_pwaPg{max-width:540px}}@media(min-width: 768px){.container_pwaPg{max-width:720px}}@media(min-width: 992px){.container_pwaPg{max-width:960px}}@media(min-width: 1200px){.container_pwaPg{max-width:1140px}}.container_pwaPg_fluid{width:100%;padding-right:0;padding-left:0;margin-right:auto;margin-left:auto}.container_pwaPg .row{display:flex;flex-wrap:wrap;flex-direction:row;margin-top:15px;margin-bottom:15px;margin-right:-15px;margin-left:-15px}@media(min-width: 0)and (max-width: 576px){.container_pwaPg .row{margin-right:0;margin-left:0}}.container_pwaPg_fluid .row{display:flex;flex-wrap:wrap;flex-direction:row;margin-top:15px;margin-bottom:15px;padding-right:15px;padding-left:15px}@media(min-width: 0)and (max-width: 576px){.container_pwaPg_fluid .row{padding-right:0;padding-left:0}}.col_xl_12,.col_xl_11,.col_xl_10,.col_xl_9,.col_xl_8,.col_xl_7,.col_xl_6,.col_xl_5,.col_xl_4,.col_xl_3,.col_xl_2,.col_xl_1,.col_lg_12,.col_lg_11,.col_lg_10,.col_lg_9,.col_lg_8,.col_lg_7,.col_lg_6,.col_lg_5,.col_lg_4,.col_lg_3,.col_lg_2,.col_lg_1,.col_md_12,.col_md_11,.col_md_10,.col_md_9,.col_md_8,.col_md_7,.col_md_6,.col_md_5,.col_md_4,.col_md_3,.col_md_2,.col_md_1,.col_sm_12,.col_sm_11,.col_sm_10,.col_sm_9,.col_sm_8,.col_sm_7,.col_sm_6,.col_sm_5,.col_sm_4,.col_sm_3,.col_sm_2,.col_sm_1,.col_xs_12,.col_xs_11,.col_xs_10,.col_xs_9,.col_xs_8,.col_xs_7,.col_xs_6,.col_xs_5,.col_xs_4,.col_xs_3,.col_xs_2,.col_xs_1{position:relative;width:100%;min-height:1px;box-sizing:border-box;padding-right:15px;padding-left:15px}@media(min-width: 0)and (max-width: 576px){.col_xl_12,.col_xl_11,.col_xl_10,.col_xl_9,.col_xl_8,.col_xl_7,.col_xl_6,.col_xl_5,.col_xl_4,.col_xl_3,.col_xl_2,.col_xl_1,.col_lg_12,.col_lg_11,.col_lg_10,.col_lg_9,.col_lg_8,.col_lg_7,.col_lg_6,.col_lg_5,.col_lg_4,.col_lg_3,.col_lg_2,.col_lg_1,.col_md_12,.col_md_11,.col_md_10,.col_md_9,.col_md_8,.col_md_7,.col_md_6,.col_md_5,.col_md_4,.col_md_3,.col_md_2,.col_md_1,.col_sm_12,.col_sm_11,.col_sm_10,.col_sm_9,.col_sm_8,.col_sm_7,.col_sm_6,.col_sm_5,.col_sm_4,.col_sm_3,.col_sm_2,.col_sm_1,.col_xs_12,.col_xs_11,.col_xs_10,.col_xs_9,.col_xs_8,.col_xs_7,.col_xs_6,.col_xs_5,.col_xs_4,.col_xs_3,.col_xs_2,.col_xs_1{padding-right:5px;padding-left:5px}}@media(min-width: 0){.col_xs_1{flex:0 0 8.3333333333%;max-width:8.3333333333%}.col_xs_2{flex:0 0 16.6666666667%;max-width:16.6666666667%}.col_xs_3{flex:0 0 25%;max-width:25%}.col_xs_4{flex:0 0 33.3333333333%;max-width:33.3333333333%}.col_xs_5{flex:0 0 41.6666666667%;max-width:41.6666666667%}.col_xs_6{flex:0 0 50%;max-width:50%}.col_xs_7{flex:0 0 58.3333333333%;max-width:58.3333333333%}.col_xs_8{flex:0 0 66.6666666667%;max-width:66.6666666667%}.col_xs_9{flex:0 0 75%;max-width:75%}.col_xs_10{flex:0 0 83.3333333333%;max-width:83.3333333333%}.col_xs_11{flex:0 0 91.6666666667%;max-width:91.6666666667%}.col_xs_12{flex:0 0 100%;max-width:100%}.offset_xs_0{margin-left:0}.offset_xs_1{margin-left:8.3333333333%}.offset_xs_2{margin-left:16.6666666667%}.offset_xs_3{margin-left:25%}.offset_xs_4{margin-left:33.3333333333%}.offset_xs_5{margin-left:41.6666666667%}.offset_xs_6{margin-left:50%}.offset_xs_7{margin-left:58.3333333333%}.offset_xs_8{margin-left:66.6666666667%}.offset_xs_9{margin-left:75%}.offset_xs_10{margin-left:83.3333333333%}.offset_xs_11{margin-left:91.6666666667%}}@media(min-width: 576px){.col_sm_1{flex:0 0 8.3333333333%;max-width:8.3333333333%}.col_sm_2{flex:0 0 16.6666666667%;max-width:16.6666666667%}.col_sm_3{flex:0 0 25%;max-width:25%}.col_sm_4{flex:0 0 33.3333333333%;max-width:33.3333333333%}.col_sm_5{flex:0 0 41.6666666667%;max-width:41.6666666667%}.col_sm_6{flex:0 0 50%;max-width:50%}.col_sm_7{flex:0 0 58.3333333333%;max-width:58.3333333333%}.col_sm_8{flex:0 0 66.6666666667%;max-width:66.6666666667%}.col_sm_9{flex:0 0 75%;max-width:75%}.col_sm_10{flex:0 0 83.3333333333%;max-width:83.3333333333%}.col_sm_11{flex:0 0 91.6666666667%;max-width:91.6666666667%}.col_sm_12{flex:0 0 100%;max-width:100%}.offset_sm_0{margin-left:0}.offset_sm_1{margin-left:8.3333333333%}.offset_sm_2{margin-left:16.6666666667%}.offset_sm_3{margin-left:25%}.offset_sm_4{margin-left:33.3333333333%}.offset_sm_5{margin-left:41.6666666667%}.offset_sm_6{margin-left:50%}.offset_sm_7{margin-left:58.3333333333%}.offset_sm_8{margin-left:66.6666666667%}.offset_sm_9{margin-left:75%}.offset_sm_10{margin-left:83.3333333333%}.offset_sm_11{margin-left:91.6666666667%}}@media(min-width: 768px){.col_md_1{flex:0 0 8.3333333333%;max-width:8.3333333333%}.col_md_2{flex:0 0 16.6666666667%;max-width:16.6666666667%}.col_md_3{flex:0 0 25%;max-width:25%}.col_md_4{flex:0 0 33.3333333333%;max-width:33.3333333333%}.col_md_5{flex:0 0 41.6666666667%;max-width:41.6666666667%}.col_md_6{flex:0 0 50%;max-width:50%}.col_md_7{flex:0 0 58.3333333333%;max-width:58.3333333333%}.col_md_8{flex:0 0 66.6666666667%;max-width:66.6666666667%}.col_md_9{flex:0 0 75%;max-width:75%}.col_md_10{flex:0 0 83.3333333333%;max-width:83.3333333333%}.col_md_11{flex:0 0 91.6666666667%;max-width:91.6666666667%}.col_md_12{flex:0 0 100%;max-width:100%}.offset_md_0{margin-left:0}.offset_md_1{margin-left:8.3333333333%}.offset_md_2{margin-left:16.6666666667%}.offset_md_3{margin-left:25%}.offset_md_4{margin-left:33.3333333333%}.offset_md_5{margin-left:41.6666666667%}.offset_md_6{margin-left:50%}.offset_md_7{margin-left:58.3333333333%}.offset_md_8{margin-left:66.6666666667%}.offset_md_9{margin-left:75%}.offset_md_10{margin-left:83.3333333333%}.offset_md_11{margin-left:91.6666666667%}}@media(min-width: 992px){.col_lg_1{flex:0 0 8.3333333333%;max-width:8.3333333333%}.col_lg_2{flex:0 0 16.6666666667%;max-width:16.6666666667%}.col_lg_3{flex:0 0 25%;max-width:25%}.col_lg_4{flex:0 0 33.3333333333%;max-width:33.3333333333%}.col_lg_5{flex:0 0 41.6666666667%;max-width:41.6666666667%}.col_lg_6{flex:0 0 50%;max-width:50%}.col_lg_7{flex:0 0 58.3333333333%;max-width:58.3333333333%}.col_lg_8{flex:0 0 66.6666666667%;max-width:66.6666666667%}.col_lg_9{flex:0 0 75%;max-width:75%}.col_lg_10{flex:0 0 83.3333333333%;max-width:83.3333333333%}.col_lg_11{flex:0 0 91.6666666667%;max-width:91.6666666667%}.col_lg_12{flex:0 0 100%;max-width:100%}.offset_lg_0{margin-left:0}.offset_lg_1{margin-left:8.3333333333%}.offset_lg_2{margin-left:16.6666666667%}.offset_lg_3{margin-left:25%}.offset_lg_4{margin-left:33.3333333333%}.offset_lg_5{margin-left:41.6666666667%}.offset_lg_6{margin-left:50%}.offset_lg_7{margin-left:58.3333333333%}.offset_lg_8{margin-left:66.6666666667%}.offset_lg_9{margin-left:75%}.offset_lg_10{margin-left:83.3333333333%}.offset_lg_11{margin-left:91.6666666667%}}@media(min-width: 1200px){.col_xl_1{flex:0 0 8.3333333333%;max-width:8.3333333333%}.col_xl_2{flex:0 0 16.6666666667%;max-width:16.6666666667%}.col_xl_3{flex:0 0 25%;max-width:25%}.col_xl_4{flex:0 0 33.3333333333%;max-width:33.3333333333%}.col_xl_5{flex:0 0 41.6666666667%;max-width:41.6666666667%}.col_xl_6{flex:0 0 50%;max-width:50%}.col_xl_7{flex:0 0 58.3333333333%;max-width:58.3333333333%}.col_xl_8{flex:0 0 66.6666666667%;max-width:66.6666666667%}.col_xl_9{flex:0 0 75%;max-width:75%}.col_xl_10{flex:0 0 83.3333333333%;max-width:83.3333333333%}.col_xl_11{flex:0 0 91.6666666667%;max-width:91.6666666667%}.col_xl_12{flex:0 0 100%;max-width:100%}.offset_xl_0{margin-left:0}.offset_xl_1{margin-left:8.3333333333%}.offset_xl_2{margin-left:16.6666666667%}.offset_xl_3{margin-left:25%}.offset_xl_4{margin-left:33.3333333333%}.offset_xl_5{margin-left:41.6666666667%}.offset_xl_6{margin-left:50%}.offset_xl_7{margin-left:58.3333333333%}.offset_xl_8{margin-left:66.6666666667%}.offset_xl_9{margin-left:75%}.offset_xl_10{margin-left:83.3333333333%}.offset_xl_11{margin-left:91.6666666667%}}.row.align-items-center{align-items:center;justify-content:center}/*# sourceMappingURL=base.css.map */
+</style>
+
+<style>
+    .comoLeerWrapper .bottomBnnr .txt_left .btnWrap a,
+    .comoLeerWrapper .bottomBnnr .txt_right .btnWrap a {
+        color: #fff;
+        text-transform: uppercase;
+        display: inline-block;
+        border: none;
+        margin: 40px 0 0;
+        padding: 10px 40px;
+        border-radius: 30px;
+        font-size: 16px;
+        text-decoration: none;
+        background: #07326c
+    }
+
+    .comoLeerWrapper {
+        font-family: Asap, sans-serif;
+        color: #666;
+        line-height: 1.3;
+        font-size: 16px
+    }
+
+    .comoLeerWrapper .mainTtl {
+        font-family: Gilroy, Asap, sans-serif
+    }
+
+    .comoLeerWrapper {
+        position: relative
+    }
+
+    .comoLeerWrapper:before {
+        content: "";
+        position: absolute;
+        background: #f8f8f8;
+        width: 100vw;
+        height: 100%;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%);
+        z-index: 0;
+        z-index: -1
+    }
+
+    .comoLeerWrapper .toolWrap {
+        position: absolute
+    }
+
+    .comoLeerWrapper .toolWrap .toolBtn button {
+        background: #fff;
+        border: thin solid #07326c;
+        border-radius: 5px;
+        padding: 2px 10px;
+        color: #07326c;
+        outline: none;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .toolWrap .toolBtn button {
+            font-size: 13px
+        }
+    }
+
+    .comoLeerWrapper .toolWrap .toolBtn.toolArrow_left button:before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        top: 50%;
+        left: -4px;
+        transform: translateY(-50%) rotate(45deg);
+        border-left: thin solid #07326c;
+        border-bottom: thin solid #07326c
+    }
+
+    .comoLeerWrapper .toolWrap .toolBtn.toolArrow_down button:before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        bottom: -4px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        border-right: thin solid #07326c;
+        border-bottom: thin solid #07326c
+    }
+
+    .comoLeerWrapper .toolWrap .toolBtn.toolArrow_top button:before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        top: -4px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        border-top: thin solid #07326c;
+        border-left: thin solid #07326c
+    }
+
+    .comoLeerWrapper .toolWrap .toolTip {
+        pointer-events: none;
+        position: absolute;
+        width: 250px;
+        background: #133e5b;
+        color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        bottom: 0;
+        left: -50px;
+        opacity: 0
+    }
+
+    .comoLeerWrapper .toolWrap .toolTip:before {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background: #133e5b;
+        bottom: -11px;
+        left: 80px;
+        transform: translateY(-50%) rotate(45deg)
+    }
+
+    .comoLeerWrapper .toolWrap .toolTip .closeTool {
+        position: absolute;
+        top: 5px;
+        right: 5px
+    }
+
+    .comoLeerWrapper .toolWrap .toolTip .closeTool button {
+        border: none;
+        background: transparent;
+        outline: none;
+        opacity: 1;
+        width: 25px;
+        height: 25px;
+        padding: 0;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    .comoLeerWrapper .toolWrap .toolTip .closeTool button i {
+        font-size: 0;
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        position: relative;
+        transform: rotate(45deg)
+    }
+
+    .comoLeerWrapper .toolWrap .toolTip .closeTool button i:before {
+        content: "";
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(90deg)
+    }
+
+    .comoLeerWrapper .toolWrap .toolTip .ttl {
+        font-family: Gilroy, Asap, sans-serif;
+        font-weight: 700;
+        padding: 0 0 5px;
+        border-bottom: thin solid #999
+    }
+
+    .comoLeerWrapper .toolWrap .toolTip .body {
+        padding: 10px 0 0;
+        font-size: 13px
+    }
+
+    .comoLeerWrapper .toolWrap.active {
+        z-index: 999
+    }
+
+    .comoLeerWrapper .toolWrap.active .toolBtn {
+        display: none
+    }
+
+    .comoLeerWrapper .toolWrap.active .toolBtn button {
+        background: #e27d7d;
+        border: thin solid #e27d7d;
+        color: #fff
+    }
+
+    .comoLeerWrapper .toolWrap.active .toolBtn.toolArrow_left button:before {
+        background: #e27d7d;
+        border-left: thin solid #e27d7d;
+        border-bottom: thin solid #e27d7d
+    }
+
+    .comoLeerWrapper .toolWrap.active .toolBtn.toolArrow_down button:before {
+        background: #e27d7d;
+        border-right: thin solid #e27d7d;
+        border-bottom: thin solid #e27d7d
+    }
+
+    .comoLeerWrapper .toolWrap.active .toolTip {
+        pointer-events: auto;
+        opacity: 1;
+        transition: all .4s ease-out 0ms
+    }
+
+    .comoLeerWrapper .topBox .ttl .mainTtl {
+        color: #07326c;
+        font-size: 40px;
+        font-weight: bolder
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .topBox .ttl .mainTtl {
+            font-size: 30px
+        }
+    }
+
+    .comoLeerWrapper .topBox .txt {
+        margin: 25px 0
+    }
+
+    .comoLeerWrapper .topBox .vidWrap {
+        max-width: 720px;
+        margin: auto
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .topBox .vidWrap {
+            margin: 0 auto 30px
+        }
+    }
+
+    .comoLeerWrapper .topBox .vidWrap video {
+        width: 100%;
+        height: auto;
+        outline: none
+    }
+
+    .comoLeerWrapper .topBox .alert {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 30px 0 40px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .topBox .alert {
+            display: none
+        }
+    }
+
+    .comoLeerWrapper .topBox .alert .alertIcon {
+        width: 100px
+    }
+
+    .comoLeerWrapper .topBox .alert .alertIcon img {
+        width: 100%;
+        height: auto
+    }
+
+    .comoLeerWrapper .topBox .alert .alertTxt {
+        margin: 0 0 0 10px;
+        color: #e27d7d
+    }
+
+    .comoLeerWrapper .topBox .alert .alertTxt p {
+        margin: 0
+    }
+
+    .comoLeerWrapper .formBox {
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+        position: relative;
+        z-index: 4
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox {
+            z-index: 0;
+            width: calc(100% + 30px);
+            left: 50%;
+            transform: translateX(-50%)
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .topLogo {
+        background: #e9f2f4;
+        padding: 20px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    .comoLeerWrapper .formBox .formSheet .topLogo .logoImg {
+        width: 300px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .topLogo .logoImg {
+            width: 240px
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .topLogo .logoImg img {
+        width: 100%;
+        height: auto
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content {
+        padding: 50px 100px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content {
+            padding: 40px 20px
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .topInfo .topItem {
+        display: -ms-flexbox;
+        display: flex;
+        margin: 15px 0;
+        position: relative
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .topInfo .topItem label {
+        width: 120px;
+        text-align: right;
+        margin: 0 20px 0 0;
+        color: #80ace0
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .topInfo .topItem label {
+            width: 70px;
+            font-size: 14px
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .topInfo .topItem label img {
+        width: 60px;
+        height: auto
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .topInfo .topItem label img {
+            width: 40px
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .topInfo .topItem .text {
+        margin: 0
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .topInfo .topItem .text {
+            font-size: 13px
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .topInfo .topItem.topItem_img {
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .topInfo .topItem .toolWrap.toolWrap_lg {
+        top: 0;
+        left: 390px;
+        display: block
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .topInfo .topItem .toolWrap.toolWrap_lg .toolTip {
+        bottom: 10px;
+        left: -120px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .topInfo .topItem .toolWrap.toolWrap_lg {
+            display: none
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .topInfo .topItem .toolWrap.toolWrap_sm {
+        display: none;
+        top: -40px;
+        left: 240px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .topInfo .topItem .toolWrap.toolWrap_sm {
+            display: block
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .topInfo .topItem .toolWrap.toolWrap_sm .toolTip {
+        left: -160px;
+        bottom: 0
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .topInfo .topItem .toolWrap.toolWrap_sm .toolTip {
+            bottom: -30px
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .topInfo .topItem .toolWrap.toolWrap_sm .toolTip:before {
+        left: 190px
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin: 80px 0 10px;
+        -ms-flex-align: start;
+        align-items: flex-start
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap {
+            margin: 70px 0 10px;
+            display: block
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 330px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem {
+            width: auto
+        }
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem.txtItem_oi {
+            margin: 90px 0 0
+        }
+
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem.txtItem_oi .txt.txt_ojo .toolWrap .toolBtn button {
+            width: 110px
+        }
+
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem.txtItem_oi .txt.txt_ojo .toolWrap .toolBtn button:before {
+            left: 38%
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .text_group {
+        display: -ms-flexbox;
+        display: flex
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .text_group {
+            margin: 0 auto
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .text_group.text_group_scndLine {
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .text_group.text_group_scndLine {
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            padding: 0 0 0 15px
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt {
+        margin: 0 6px;
+        position: relative
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt label {
+        color: #80ace0;
+        font-weight: 700
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_ojo .toolWrap {
+        top: -32px;
+        left: -85px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_ojo .toolWrap {
+            left: -30px
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_ojo .toolWrap .toolBtn button {
+        width: 120px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_ojo .toolWrap .toolBtn button {
+            width: 100px
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_ojo .toolWrap .toolBtn button:before {
+        left: unset;
+        right: 15px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_ojo .toolWrap .toolBtn button:before {
+            right: 50px
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_ojo .toolWrap .toolTip {
+        bottom: -20px;
+        left: 10px
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_poder .toolWrap {
+        bottom: -20px;
+        left: -60px
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_poder .toolWrap .toolBtn button {
+        width: 120px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_poder .toolWrap .toolBtn button {
+            width: 115px
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_poder .toolWrap .toolBtn button:before {
+        left: 65%
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_poder .toolWrap .toolBtn button:before {
+            left: 70%
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_poder .toolWrap .toolTip {
+        bottom: -84px;
+        left: -30px
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_poder .toolWrap .toolTip:before {
+        bottom: auto;
+        top: 0;
+        left: 100px
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_cyl .toolWrap {
+        top: -32px;
+        left: -40px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_cyl .toolWrap {
+            left: 0
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_cyl .toolWrap .toolBtn button {
+        width: 120px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_cyl .toolWrap .toolBtn button {
+            width: 110px
+        }
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_cyl .toolWrap .toolBtn button:before {
+            left: 20%
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_cyl .toolWrap .toolTip {
+        bottom: -24px;
+        left: -30px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_cyl .toolWrap .toolTip:before {
+            left: 45px
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_axis .toolWrap {
+        bottom: -20px;
+        left: -30px
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_axis .toolWrap .toolBtn button {
+        width: 90px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_axis .toolWrap .toolBtn button {
+            width: 80px
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_axis .toolWrap .toolTip {
+        bottom: -115px;
+        left: -60px
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_axis .toolWrap .toolTip:before {
+        bottom: auto;
+        top: 0;
+        left: 100px
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_curva .toolWrap {
+        top: -32px;
+        left: -45px
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_curva .toolWrap .toolBtn button {
+        width: 110px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_curva .toolWrap .toolBtn button {
+            width: 100px
+        }
+
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_curva .toolWrap .toolBtn button:before {
+            left: 55%
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_curva .toolWrap .toolTip {
+        bottom: -20px;
+        left: -30px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_curva .toolWrap .toolTip {
+            left: -110px
+        }
+
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_curva .toolWrap .toolTip:before {
+            left: 65%
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_diam .toolWrap.toolWrap_lg {
+        display: block;
+        top: -3px;
+        left: 44px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_diam .toolWrap.toolWrap_lg {
+            display: none
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_diam .toolWrap.toolWrap_sm {
+        display: none;
+        top: -3px;
+        left: 44px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_diam .toolWrap.toolWrap_sm {
+            display: block;
+            top: 32px;
+            left: -26px
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_diam .toolWrap .toolBtn button {
+        width: 110px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_diam .toolWrap .toolBtn button {
+            width: 80px
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_diam .toolWrap .toolTip {
+        bottom: 5px;
+        left: -115px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_diam .toolWrap .toolTip {
+            bottom: -125px;
+            left: -165px
+        }
+
+        .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_diam .toolWrap .toolTip:before {
+            bottom: auto;
+            top: 0;
+            left: auto;
+            right: 40px
+        }
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_add {
+        width: 100px;
+        display: -ms-flexbox;
+        display: flex
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_add label {
+        margin: 0 5px 0 0
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_add .toolWrap {
+        top: -3px;
+        left: 90px
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_add .toolWrap .toolBtn button {
+        width: 90px
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .midInfo .textWrap .txtItem .txt.txt_add .toolWrap .toolTip {
+        bottom: 5px;
+        left: -115px
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .bottomInfo {
+        text-align: center;
+        margin: 60px 0 0
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .bottomInfo .firm {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .bottomInfo .firm label {
+        margin: 0 5px 0 0;
+        color: #80ace0;
+        font-weight: 700
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .bottomInfo .firm p {
+        padding: 0 0 3px;
+        border-bottom: thin dashed #aaa;
+        margin: 0;
+        color: #07326c;
+        font-weight: 700
+    }
+
+    .comoLeerWrapper .formBox .formSheet .content .bottomInfo .legal {
+        margin: 20px 0 0;
+        font-size: 12px
+    }
+
+    .comoLeerWrapper .packageBox {
+        position: relative;
+        margin: -120px 0 0;
+        padding: 150px 0 40px
+    }
+
+    .comoLeerWrapper .packageBox:before {
+        content: "";
+        position: absolute;
+        background: #e9f2f4;
+        width: 100vw;
+        height: 100%;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%)
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .packageBox {
+            margin: 0;
+            padding: 40px 0
+        }
+    }
+
+    .comoLeerWrapper .packageBox:before {
+        z-index: 0
+    }
+
+    .comoLeerWrapper .packageBox .maintext {
+        position: absolute;
+        top: 56%;
+        left: 10%;
+        z-index: 10
+    }
+
+    @media (min-width:1200px) {
+        .comoLeerWrapper .packageBox .maintext {
+            left: 15%
+        }
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .packageBox .maintext {
+            position: relative;
+            top: 0;
+            left: 0
+        }
+    }
+
+    .comoLeerWrapper .packageBox .maintext .mainTtl {
+        font-size: 18px;
+        font-weight: 500;
+        color: #07326c;
+        margin: 0
+    }
+
+    .comoLeerWrapper .packageBox .maintext .mainTtl.mainTtl_lg {
+        display: block;
+        text-align: right
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .packageBox .maintext .mainTtl.mainTtl_lg {
+            display: none
+        }
+    }
+
+    .comoLeerWrapper .packageBox .maintext .mainTtl.mainTtl_sm {
+        display: none;
+        text-align: center;
+        margin: 0 0 10px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .packageBox .maintext .mainTtl.mainTtl_sm {
+            display: block
+        }
+    }
+
+    .comoLeerWrapper .packageBox .packCont {
+        width: 550px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 5
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .packageBox .packCont {
+            width: 100%
+        }
+    }
+
+    .comoLeerWrapper .packageBox .packCont img {
+        width: 100%;
+        height: auto
+    }
+
+    .comoLeerWrapper .packageBox .packCont img.img_lg {
+        display: block
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .packageBox .packCont img.img_lg {
+            display: none
+        }
+    }
+
+    .comoLeerWrapper .packageBox .packCont img.img_sm {
+        display: none
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .packageBox .packCont img.img_sm {
+            display: block
+        }
+    }
+
+    .comoLeerWrapper .packageBox .scndtext {
+        position: absolute;
+        bottom: 70px;
+        right: 17%;
+        width: 300px;
+        z-index: 10
+    }
+
+    @media (min-width:1200px) {
+        .comoLeerWrapper .packageBox .scndtext {
+            right: 23%
+        }
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .packageBox .scndtext {
+            width: 200px;
+            right: 0;
+            bottom: 45px
+        }
+    }
+
+    .comoLeerWrapper .packageBox .scndtext p {
+        margin: 0;
+        font-size: 13px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .packageBox .scndtext p {
+            font-size: 13px
+        }
+    }
+
+    .comoLeerWrapper .alertBox_sm {
+        display: none;
+        padding: 20px 0
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .alertBox_sm {
+            display: block
+        }
+    }
+
+    .comoLeerWrapper .alertBox_sm .alert {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: start;
+        align-items: flex-start
+    }
+
+    .comoLeerWrapper .alertBox_sm .alert .alertIcon {
+        width: 300px
+    }
+
+    .comoLeerWrapper .alertBox_sm .alert .alertIcon img {
+        width: 100%;
+        height: auto
+    }
+
+    .comoLeerWrapper .alertBox_sm .alert .alertTxt {
+        margin: 0 0 0 10px;
+        color: #e27d7d
+    }
+
+    .comoLeerWrapper .alertBox_sm .alert .alertTxt p {
+        margin: 0
+    }
+
+    .comoLeerWrapper .bottomBnnr {
+        position: relative;
+        height: 300px
+    }
+
+    .comoLeerWrapper .bottomBnnr:before {
+        content: "";
+        position: absolute;
+        background-image: url({{media url='wysiwyg/landings/como-leer-formula/bottom_bnnr.png'}});
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100%;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%)
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .bottomBnnr {
+            position: relative;
+            height: 700px
+        }
+
+        .comoLeerWrapper .bottomBnnr:before {
+            content: "";
+            position: absolute;
+            background-image: url({{media url='wysiwyg/landings/como-leer-formula/bottom_bnnr_sm.png'}});
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+            height: 100%;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%);
+            z-index: 0;
+            background-size: contain;
+            background-position: top
+        }
+    }
+
+    .comoLeerWrapper .bottomBnnr:before {
+        z-index: 0
+    }
+
+    .comoLeerWrapper .bottomBnnr .txt_left {
+        width: 300px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .bottomBnnr .txt_left {
+            width: 100%;
+            position: relative;
+            top: 35px;
+            left: 0;
+            transform: translateY(0)
+        }
+    }
+
+    .comoLeerWrapper .bottomBnnr .txt_left .mainTtl {
+        font-size: 24px;
+        color: #fff
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .bottomBnnr .txt_left .mainTtl {
+            width: 300px
+        }
+    }
+
+    .comoLeerWrapper .bottomBnnr .txt_left .body {
+        color: #fff;
+        margin: 10px 0 0
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .bottomBnnr .txt_left .body {
+            width: 300px
+        }
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .bottomBnnr .txt_left .btnWrap {
+            margin: 260px auto 0;
+            text-align: center
+        }
+    }
+
+    .comoLeerWrapper .bottomBnnr .txt_left .btnWrap a {
+        margin: 30px 0 0;
+        background: #65dbad;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 5px 30px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .bottomBnnr .txt_left .btnWrap a {
+            font-size: 13px;
+            margin: 0
+        }
+    }
+
+    .comoLeerWrapper .bottomBnnr .txt_right {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .bottomBnnr .txt_right {
+            top: 0;
+            transform: translateY(0);
+            position: relative;
+            margin: 120px 0 0
+        }
+    }
+
+    .comoLeerWrapper .bottomBnnr .txt_right .mainTtl {
+        font-size: 14px;
+        color: #fff
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .bottomBnnr .txt_right .mainTtl {
+            font-size: 16px;
+            color: #07326c
+        }
+    }
+
+    .comoLeerWrapper .bottomBnnr .txt_right .img {
+        width: 250px;
+        margin: 30px 0
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .bottomBnnr .txt_right .img {
+            width: 300px;
+            margin: 40px auto
+        }
+    }
+
+    .comoLeerWrapper .bottomBnnr .txt_right .img img {
+        width: 100%;
+        height: auto
+    }
+
+    .comoLeerWrapper .bottomBnnr .txt_right .img img.img_lg {
+        display: block
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .bottomBnnr .txt_right .img img.img_lg {
+            display: none
+        }
+    }
+
+    .comoLeerWrapper .bottomBnnr .txt_right .img img.img_sm {
+        display: none
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .bottomBnnr .txt_right .img img.img_sm {
+            display: block
+        }
+    }
+
+    .comoLeerWrapper .bottomBnnr .txt_right .btnWrap a {
+        margin: 0;
+        background: #80ace0;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 5px 30px
+    }
+
+    @media (max-width:767px) {
+        .comoLeerWrapper .bottomBnnr .txt_right .btnWrap a {
+            padding: 8px 30px;
+            font-size: 13px
+        }
+    }
+
+    @media (max-width:767px) {
+        div.btn_action {
+            z-index: 14
+        }
+    }
+</style>
+<div class="comoLeerWrapper">
+    <div class="container_pwaPg">
+        <div class="topBox">
+            <div class="row">
+                <div class="col_lg_12">
+                    <div class="ttl">
+                        <h3 class="mainTtl">¿Cómo leer tu receta?</h3>
+                    </div>
+                    <div class="txt">
+                        <p>
+                            <b>Aprende cómo puedes interpretar correctamente tu receta oftálmica.</b> Ten presente que, si es la primera vez que utilizas lentes de contacto y no tienes una prescripción, debes visitar un optómetra para obtenerla.
+                        </p>
+                    </div>
+                </div>
+                <div class="col_lg_12">
+                    <div class="vidWrap">
+                        <video controls>
+                            <source src="{{media url='landings/como-leer-formula/comoLeer_co.mp4'}}"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="col_lg_12">
+                    <div class="alert">
+                        <div class="alertIcon"><img
+                                src="{{media url='wysiwyg/landings/como-leer-formula/icon_alert.png'}}"
+                                alt="alert icon"></div>
+                        <div class="alertTxt">
+                            <p>
+                                <b>La receta para lentes de contacto es diferente a la receta para gafas,</b> ya que la primera contiene información adicional como la curva base o el diámetro. Asegúrate de pedir a tu optómetra la receta adecuada para tus dispositivos de salud visual.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="formBox">
+            <div class="row">
+                <div class="col_lg_12">
+                    <div class="formSheet">
+                        <div class="topLogo">
+                            <div class="logoImg">
+                                <img src="{{media url='wysiwyg/landings/como-leer-formula/logo_lp.png'}}"
+                                    alt="Logo Lentesplus">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="topInfo">
+                                <div class="topItem">
+                                    <label for=""> <b>Nombre:</b> </label>
+                                    <p class="text"> juan perez </p>
+                                </div>
+                                <div class="topItem">
+                                    <label for=""> <b>Dirección:</b> </label>
+                                    <p class="text">Avenida Providencia 3234</p>
+                                </div>
+                                <div class="topItem">
+                                    <label for=""> <b>Fecha:</b> </label>
+                                    <p class="text">12/01/13</p>
+                                </div>
+                                <div class="topItem topItem_img">
+                                    <label for=""> <img
+                                            src="{{media url='wysiwyg/landings/como-leer-formula/icon_Rx.png'}}"
+                                            alt="RX"> </label>
+                                    <p class="text">Expira 12/12/24</p>
+                                </div>
+                                <div class="topItem">
+                                    <label for="">&nbsp;</label>
+                                    <p class="text">Acuvue Oasys para Astigmatismo</p>
+
+                                    <div class="toolWrap toolWrap_lg">
+                                        <div class="toolBtn toolBtn_fx toolArrow_left" onclick="this.parentNode.classList.add('active');">
+                                            <button>Marca</button>
+                                        </div>
+                                        <div class="toolTip">
+                                            <div class="closeTool">
+                                                <button class="closeTool_btn" onclick="this.parentNode.parentNode.parentNode.classList.remove('active');">
+                                                    <i>X</i>
+                                                </button>
+                                            </div>
+                                            <div class="ttl">Marca</div>
+                                            <div class="body">Nombre y marca de los lentes de contacto. Ejemplo: Acuvue
+                                                2, Air Optix Astigmatismo.</div>
+                                        </div>
+                                    </div>
+                                    <div class="toolWrap toolWrap_sm">
+                                        <div class="toolBtn toolBtn_fx toolArrow_down" onclick="this.parentNode.classList.add('active');">
+                                            <button>Marca</button>
+                                        </div>
+                                        <div class="toolTip">
+                                            <div class="closeTool">
+                                                <button class="closeTool_btn" onclick="this.parentNode.parentNode.parentNode.classList.remove('active');">
+                                                    <i>X</i>
+                                                </button>
+                                            </div>
+                                            <div class="ttl">Marca</div>
+                                            <div class="body">Nombre y marca de los lentes de contacto. Ejemplo: Acuvue
+                                                2, Air Optix Astigmatismo.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="midInfo">
+                                <div class="textWrap">
+                                    <div class="txtItem txtItem_od">
+                                        <div class="text_group">
+                                            <div class="txt txt_ojo">
+                                                <label for="">OD:</label>
+
+                                                <div class="toolWrap">
+                                                    <div class="toolBtn toolArrow_down">
+                                                        <button>Ojo derecho</button>
+                                                    </div>
+                                                    <div class="toolTip">
+                                                        <div class="closeTool">
+                                                            <button>
+                                                                <i>X</i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ttl">Ojo derecho</div>
+                                                        <div class="body">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Sapiente ut modi vitae sunt provident.
+                                                            Hic.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="txt txt_poder">
+                                                <p>-0.75</p>
+                                                <div class="toolWrap">
+                                                    <div class="toolBtn toolBtn_fx toolArrow_top" onclick="this.parentNode.classList.add('active');">
+                                                        <button>Poder (Esfera)</button>
+                                                    </div>
+                                                    <div class="toolTip">
+                                                        <div class="closeTool">
+                                                            <button class="closeTool_btn" onclick="this.parentNode.parentNode.parentNode.classList.remove('active');">
+                                                                <i>X</i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ttl">Poder (Esfera)</div>
+                                                        <div class="body">Es la receta oftálmica para tus lentes de
+                                                            contacto.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="txt txt_cyl">
+                                                <p>-0.75</p>
+                                                <div class="toolWrap">
+                                                    <div class="toolBtn toolBtn_fx toolArrow_down" onclick="this.parentNode.classList.add('active');">
+                                                        <button>Cilindro (Cyl)</button>
+                                                    </div>
+                                                    <div class="toolTip">
+                                                        <div class="closeTool">
+                                                            <button class="closeTool_btn" onclick="this.parentNode.parentNode.parentNode.classList.remove('active');">
+                                                                <i>X</i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ttl">Cilindro (Cyl)</div>
+                                                        <div class="body">Corresponde a Cilindro y aplica para recetas
+                                                            de astigmatismo. Usualmente, es un número entre -4.00 y
+                                                            +4.00.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="txt txt_separa">
+                                                <p>x</p>
+                                            </div>
+                                            <div class="txt txt_axis">
+                                                <p>1.60</p>
+                                                <div class="toolWrap">
+                                                    <div class="toolBtn toolBtn_fx toolArrow_top" onclick="this.parentNode.classList.add('active');">
+                                                        <button>Eje (Axis)</button>
+                                                    </div>
+                                                    <div class="toolTip">
+                                                        <div class="closeTool">
+                                                            <button class="closeTool_btn" onclick="this.parentNode.parentNode.parentNode.classList.remove('active');">
+                                                                <i>X</i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ttl">Eje (Axis)</div>
+                                                        <div class="body">Corresponde a Eje y aplica para recetas de
+                                                            astigmatismo. Usualmente, es un número entre 0 y 180.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="txt txt_separa">
+                                                <p>/</p>
+                                            </div>
+                                            <div class="txt txt_curva">
+                                                <p>8.6</p>
+                                            </div>
+                                            <div class="txt txt_separa">
+                                                <p>/</p>
+                                            </div>
+                                            <div class="txt txt_diam">
+                                                <p>14.5</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="txtItem txtItem_oi">
+                                        <div class="text_group">
+                                            <div class="txt txt_ojo">
+                                                <label for="">OI:</label>
+
+                                                <div class="toolWrap">
+                                                    <div class="toolBtn toolArrow_down">
+                                                        <button>Ojo izquierdo</button>
+                                                    </div>
+                                                    <div class="toolTip">
+                                                        <div class="closeTool">
+                                                            <button>
+                                                                <i>X</i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ttl">Ojo izquierdo</div>
+                                                        <div class="body">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Sapiente ut modi vitae sunt provident.
+                                                            Hic.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="txt txt_poder">
+                                                <p>-0.75</p>
+                                            </div>
+                                            <div class="txt txt_cyl">
+                                                <p>-0.75</p>
+                                            </div>
+                                            <div class="txt txt_separa">
+                                                <p>x</p>
+                                            </div>
+                                            <div class="txt txt_axis">
+                                                <p>1.60</p>
+                                            </div>
+                                            <div class="txt txt_separa">
+                                                <p>/</p>
+                                            </div>
+                                            <div class="txt txt_curva">
+                                                <p>8.6</p>
+
+                                                <div class="toolWrap">
+                                                    <div class="toolBtn toolBtn_fx toolArrow_down" onclick="this.parentNode.classList.add('active');">
+                                                        <button>Curva base</button>
+                                                    </div>
+                                                    <div class="toolTip">
+                                                        <div class="closeTool">
+                                                            <button class="closeTool_btn" onclick="this.parentNode.parentNode.parentNode.classList.remove('active');">
+                                                                <i>X</i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ttl">Curva base</div>
+                                                        <div class="body">Hace referencia a la Curva Base de los lentes
+                                                            de contacto. Esta medida debe coincidir con la curvatura del
+                                                            ojo, y así darle una mayor estabilidad. Ejemplo: 8.0 / 8.6 /
+                                                            9.0.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="txt txt_separa">
+                                                <p>/</p>
+                                            </div>
+                                            <div class="txt txt_diam">
+                                                <p>14.5</p>
+
+                                                <div class="toolWrap toolWrap_lg">
+                                                    <div class="toolBtn toolBtn_fx toolArrow_left" onclick="this.parentNode.classList.add('active');">
+                                                        <button>Diámetro</button>
+                                                    </div>
+                                                    <div class="toolTip">
+                                                        <div class="closeTool">
+                                                            <button class="closeTool_btn" onclick="this.parentNode.parentNode.parentNode.classList.remove('active');">
+                                                                <i>X</i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ttl">Diámetro</div>
+                                                        <div class="body">Hace referencia al diámetro de los lentes de
+                                                            contacto y se mide en milímetros. Ejemplo: 14.5mm.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="toolWrap toolWrap_sm">
+                                                    <div class="toolBtn toolBtn_fx toolArrow_top" onclick="this.parentNode.classList.add('active');">
+                                                        <button>Diámetro</button>
+                                                    </div>
+                                                    <div class="toolTip">
+                                                        <div class="closeTool">
+                                                            <button class="closeTool_btn" onclick="this.parentNode.parentNode.parentNode.classList.remove('active');">
+                                                                <i>X</i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ttl">Diámetro</div>
+                                                        <div class="body">Hace referencia al diámetro de los lentes de
+                                                            contacto y se mide en milímetros. Ejemplo: 14.5mm.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_group text_group_scndLine">
+                                            <div class="txt txt_add">
+                                                <label for="">ADD:</label>
+                                                <p>+2.00</p>
+
+                                                <div class="toolWrap">
+                                                    <div class="toolBtn toolBtn_fx toolArrow_left" onclick="this.parentNode.classList.add('active');">
+                                                        <button>Adicional</button>
+                                                    </div>
+                                                    <div class="toolTip">
+                                                        <div class="closeTool">
+                                                            <button class="closeTool_btn" onclick="this.parentNode.parentNode.parentNode.classList.remove('active');">
+                                                                <i>X</i>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ttl">Adicional</div>
+                                                        <div class="body">Esta información solo se muestra cuando el
+                                                            paciente vive con presbicia. Corresponde a la corrección
+                                                            adicional para corregir esta afección en lentes de contacto
+                                                            bifocales o multifocales.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bottomInfo">
+                                <div class="firm">
+                                    <label for="">Firma: </label>
+                                    <p>Dr. Ernesto Gómez</p>
+                                </div>
+                                <div class="legal">
+                                    <p>*Imagen de referencia (receta astigmatismo)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alertBox_sm">
+            <div class="row">
+                <div class="col_lg_12">
+                    <div class="alert">
+                        <div class="alertIcon">
+                            <img src="{{media url='wysiwyg/landings/como-leer-formula/icon_alert.png'}}"
+                                alt="alert icon">
+                        </div>
+                        <div class="alertTxt">
+                            <p>
+                                <b>La receta para lentes de contacto es diferente a la receta para gafas,</b> ya que la primera contiene información adicional como la curva base o el diámetro. Asegúrate de pedir a tu optómetra la receta adecuada para tus dispositivos de salud visual.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="packageBox">
+            <div class="maintext">
+                <h3 class="mainTtl mainTtl_lg">
+                    ¿Cómo encuentro mi receta<br> en la caja de mis<br> lentes de contacto?
+                </h3>
+                <h3 class="mainTtl mainTtl_sm">
+                    ¿Cómo encuentro mi receta en la caja de mis lentes de contacto?
+                </h3>
+            </div>
+            <div class="packCont">
+                <img class="img_lg" src="{{media url='wysiwyg/landings/como-leer-formula/sideBox.png'}}"
+                    alt="Package image">
+                <img class="img_sm" src="{{media url='wysiwyg/landings/como-leer-formula/sideBox_sm.png'}}"
+                    alt="Package image">
+            </div>
+            <div class="scndtext">
+                <p>Revisa que la información de tus lentes de contacto coincida con la de tu receta oftálmica.</p>
+            </div>
+        </div>
+
+        <!--div class="bottomBnnr">
+            <div class="txt_left">
+                <h4 class="mainTtl">¿Aún no tienes receta?</h4>
+                <p class="body">Solicita una cita con uno de nuestros optómetras en Bogotá, resérvala en nuestros
+                    canales de atención.</p>
+                <div class="btnWrap">
+                    <a class="btnWrap_Hub" href="javascript:;">AGENDA TU CITA</a>
+                </div>
+            </div>
+            <div class="txt_right">
+                <h5 class="mainTtl">Compra tus Lentes de Contacto ahora</h5>
+                <div class="img">
+                    <img class="img_lg" src="{{media url='wysiwyg/landings/como-leer-formula/benefits.gif'}}" alt="">
+                    <img class="img_sm" src="{{media url='wysiwyg/landings/como-leer-formula/benefits_sm.gif'}}" alt="">
+                </div>
+                <div class="btnWrap">
+                    <a href="todos-los-productos">CONOCE TODOS NUESTROS PRODUCTOS</a>
+                </div-->
+            </div>
+        </div>
+    </div>
+</div>

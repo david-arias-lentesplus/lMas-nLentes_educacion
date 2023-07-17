@@ -1,0 +1,581 @@
+<!-- que es daltonismo V2.2 -->
+
+<style>
+    @import"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,600;0,800;1,400&display=swap";@import"https://fonts.googleapis.com/css2?family=Asap:wght@200;400;600;800&display=swap";:root{--font_title: "Gilroy","Montserrat", sans-serif;--font_body: "Asap", sans-serif;font-family:var(--font_title);--color_main: #80ACE0;--color_text: #2D668C;--color_textAlt: #9F98E2;--color_textAlt2: #E27D7D;--color_link: #007BFF}.container_pwaPg{width:100%;padding-right:16px;padding-left:16px;margin-right:auto;margin-left:auto}@media(min-width: 0)and (max-width: 576px){.container_pwaPg{padding-right:0;padding-left:0}}@media(min-width: 576px){.container_pwaPg{max-width:540px}}@media(min-width: 768px){.container_pwaPg{max-width:720px}}@media(min-width: 992px){.container_pwaPg{max-width:960px}}@media(min-width: 1200px){.container_pwaPg{max-width:1140px}}.container_pwaPg_fluid{width:100%;padding-right:0;padding-left:0;margin-right:auto;margin-left:auto}.container_pwaPg .row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-top:16px;margin-bottom:16px;margin-right:-16px;margin-left:-16px}@media(min-width: 0)and (max-width: 576px){.container_pwaPg .row{margin-right:0;margin-left:0}}.container_pwaPg_fluid .row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-top:16px;margin-bottom:16px;padding-right:16px;padding-left:16px}@media(min-width: 0)and (max-width: 576px){.container_pwaPg_fluid .row{padding-right:0;padding-left:0}}.col_xl_12,.col_xl_11,.col_xl_10,.col_xl_9,.col_xl_8,.col_xl_7,.col_xl_6,.col_xl_5,.col_xl_4,.col_xl_3,.col_xl_2,.col_xl_1,.col_lg_12,.col_lg_11,.col_lg_10,.col_lg_9,.col_lg_8,.col_lg_7,.col_lg_6,.col_lg_5,.col_lg_4,.col_lg_3,.col_lg_2,.col_lg_1,.col_md_12,.col_md_11,.col_md_10,.col_md_9,.col_md_8,.col_md_7,.col_md_6,.col_md_5,.col_md_4,.col_md_3,.col_md_2,.col_md_1,.col_sm_12,.col_sm_11,.col_sm_10,.col_sm_9,.col_sm_8,.col_sm_7,.col_sm_6,.col_sm_5,.col_sm_4,.col_sm_3,.col_sm_2,.col_sm_1,.col_xs_12,.col_xs_11,.col_xs_10,.col_xs_9,.col_xs_8,.col_xs_7,.col_xs_6,.col_xs_5,.col_xs_4,.col_xs_3,.col_xs_2,.col_xs_1{position:relative;width:100%;min-height:1px;-webkit-box-sizing:border-box;box-sizing:border-box;padding-right:16px;padding-left:16px}@media(min-width: 0)and (max-width: 576px){.col_xl_12,.col_xl_11,.col_xl_10,.col_xl_9,.col_xl_8,.col_xl_7,.col_xl_6,.col_xl_5,.col_xl_4,.col_xl_3,.col_xl_2,.col_xl_1,.col_lg_12,.col_lg_11,.col_lg_10,.col_lg_9,.col_lg_8,.col_lg_7,.col_lg_6,.col_lg_5,.col_lg_4,.col_lg_3,.col_lg_2,.col_lg_1,.col_md_12,.col_md_11,.col_md_10,.col_md_9,.col_md_8,.col_md_7,.col_md_6,.col_md_5,.col_md_4,.col_md_3,.col_md_2,.col_md_1,.col_sm_12,.col_sm_11,.col_sm_10,.col_sm_9,.col_sm_8,.col_sm_7,.col_sm_6,.col_sm_5,.col_sm_4,.col_sm_3,.col_sm_2,.col_sm_1,.col_xs_12,.col_xs_11,.col_xs_10,.col_xs_9,.col_xs_8,.col_xs_7,.col_xs_6,.col_xs_5,.col_xs_4,.col_xs_3,.col_xs_2,.col_xs_1{padding-right:5.3333333333px;padding-left:5.3333333333px}}@media(min-width: 0){.col_xs_1{-webkit-box-flex:0;-ms-flex:0 0 8.3333333333%;flex:0 0 8.3333333333%;max-width:8.3333333333%}.col_xs_2{-webkit-box-flex:0;-ms-flex:0 0 16.6666666667%;flex:0 0 16.6666666667%;max-width:16.6666666667%}.col_xs_3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col_xs_4{-webkit-box-flex:0;-ms-flex:0 0 33.3333333333%;flex:0 0 33.3333333333%;max-width:33.3333333333%}.col_xs_5{-webkit-box-flex:0;-ms-flex:0 0 41.6666666667%;flex:0 0 41.6666666667%;max-width:41.6666666667%}.col_xs_6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col_xs_7{-webkit-box-flex:0;-ms-flex:0 0 58.3333333333%;flex:0 0 58.3333333333%;max-width:58.3333333333%}.col_xs_8{-webkit-box-flex:0;-ms-flex:0 0 66.6666666667%;flex:0 0 66.6666666667%;max-width:66.6666666667%}.col_xs_9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col_xs_10{-webkit-box-flex:0;-ms-flex:0 0 83.3333333333%;flex:0 0 83.3333333333%;max-width:83.3333333333%}.col_xs_11{-webkit-box-flex:0;-ms-flex:0 0 91.6666666667%;flex:0 0 91.6666666667%;max-width:91.6666666667%}.col_xs_12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.offset_xs_0{margin-left:0}.offset_xs_1{margin-left:8.3333333333%}.offset_xs_2{margin-left:16.6666666667%}.offset_xs_3{margin-left:25%}.offset_xs_4{margin-left:33.3333333333%}.offset_xs_5{margin-left:41.6666666667%}.offset_xs_6{margin-left:50%}.offset_xs_7{margin-left:58.3333333333%}.offset_xs_8{margin-left:66.6666666667%}.offset_xs_9{margin-left:75%}.offset_xs_10{margin-left:83.3333333333%}.offset_xs_11{margin-left:91.6666666667%}}@media(min-width: 576px){.col_sm_1{-webkit-box-flex:0;-ms-flex:0 0 8.3333333333%;flex:0 0 8.3333333333%;max-width:8.3333333333%}.col_sm_2{-webkit-box-flex:0;-ms-flex:0 0 16.6666666667%;flex:0 0 16.6666666667%;max-width:16.6666666667%}.col_sm_3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col_sm_4{-webkit-box-flex:0;-ms-flex:0 0 33.3333333333%;flex:0 0 33.3333333333%;max-width:33.3333333333%}.col_sm_5{-webkit-box-flex:0;-ms-flex:0 0 41.6666666667%;flex:0 0 41.6666666667%;max-width:41.6666666667%}.col_sm_6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col_sm_7{-webkit-box-flex:0;-ms-flex:0 0 58.3333333333%;flex:0 0 58.3333333333%;max-width:58.3333333333%}.col_sm_8{-webkit-box-flex:0;-ms-flex:0 0 66.6666666667%;flex:0 0 66.6666666667%;max-width:66.6666666667%}.col_sm_9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col_sm_10{-webkit-box-flex:0;-ms-flex:0 0 83.3333333333%;flex:0 0 83.3333333333%;max-width:83.3333333333%}.col_sm_11{-webkit-box-flex:0;-ms-flex:0 0 91.6666666667%;flex:0 0 91.6666666667%;max-width:91.6666666667%}.col_sm_12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.offset_sm_0{margin-left:0}.offset_sm_1{margin-left:8.3333333333%}.offset_sm_2{margin-left:16.6666666667%}.offset_sm_3{margin-left:25%}.offset_sm_4{margin-left:33.3333333333%}.offset_sm_5{margin-left:41.6666666667%}.offset_sm_6{margin-left:50%}.offset_sm_7{margin-left:58.3333333333%}.offset_sm_8{margin-left:66.6666666667%}.offset_sm_9{margin-left:75%}.offset_sm_10{margin-left:83.3333333333%}.offset_sm_11{margin-left:91.6666666667%}}@media(min-width: 768px){.col_md_1{-webkit-box-flex:0;-ms-flex:0 0 8.3333333333%;flex:0 0 8.3333333333%;max-width:8.3333333333%}.col_md_2{-webkit-box-flex:0;-ms-flex:0 0 16.6666666667%;flex:0 0 16.6666666667%;max-width:16.6666666667%}.col_md_3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col_md_4{-webkit-box-flex:0;-ms-flex:0 0 33.3333333333%;flex:0 0 33.3333333333%;max-width:33.3333333333%}.col_md_5{-webkit-box-flex:0;-ms-flex:0 0 41.6666666667%;flex:0 0 41.6666666667%;max-width:41.6666666667%}.col_md_6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col_md_7{-webkit-box-flex:0;-ms-flex:0 0 58.3333333333%;flex:0 0 58.3333333333%;max-width:58.3333333333%}.col_md_8{-webkit-box-flex:0;-ms-flex:0 0 66.6666666667%;flex:0 0 66.6666666667%;max-width:66.6666666667%}.col_md_9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col_md_10{-webkit-box-flex:0;-ms-flex:0 0 83.3333333333%;flex:0 0 83.3333333333%;max-width:83.3333333333%}.col_md_11{-webkit-box-flex:0;-ms-flex:0 0 91.6666666667%;flex:0 0 91.6666666667%;max-width:91.6666666667%}.col_md_12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.offset_md_0{margin-left:0}.offset_md_1{margin-left:8.3333333333%}.offset_md_2{margin-left:16.6666666667%}.offset_md_3{margin-left:25%}.offset_md_4{margin-left:33.3333333333%}.offset_md_5{margin-left:41.6666666667%}.offset_md_6{margin-left:50%}.offset_md_7{margin-left:58.3333333333%}.offset_md_8{margin-left:66.6666666667%}.offset_md_9{margin-left:75%}.offset_md_10{margin-left:83.3333333333%}.offset_md_11{margin-left:91.6666666667%}}@media(min-width: 992px){.col_lg_1{-webkit-box-flex:0;-ms-flex:0 0 8.3333333333%;flex:0 0 8.3333333333%;max-width:8.3333333333%}.col_lg_2{-webkit-box-flex:0;-ms-flex:0 0 16.6666666667%;flex:0 0 16.6666666667%;max-width:16.6666666667%}.col_lg_3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col_lg_4{-webkit-box-flex:0;-ms-flex:0 0 33.3333333333%;flex:0 0 33.3333333333%;max-width:33.3333333333%}.col_lg_5{-webkit-box-flex:0;-ms-flex:0 0 41.6666666667%;flex:0 0 41.6666666667%;max-width:41.6666666667%}.col_lg_6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col_lg_7{-webkit-box-flex:0;-ms-flex:0 0 58.3333333333%;flex:0 0 58.3333333333%;max-width:58.3333333333%}.col_lg_8{-webkit-box-flex:0;-ms-flex:0 0 66.6666666667%;flex:0 0 66.6666666667%;max-width:66.6666666667%}.col_lg_9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col_lg_10{-webkit-box-flex:0;-ms-flex:0 0 83.3333333333%;flex:0 0 83.3333333333%;max-width:83.3333333333%}.col_lg_11{-webkit-box-flex:0;-ms-flex:0 0 91.6666666667%;flex:0 0 91.6666666667%;max-width:91.6666666667%}.col_lg_12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.offset_lg_0{margin-left:0}.offset_lg_1{margin-left:8.3333333333%}.offset_lg_2{margin-left:16.6666666667%}.offset_lg_3{margin-left:25%}.offset_lg_4{margin-left:33.3333333333%}.offset_lg_5{margin-left:41.6666666667%}.offset_lg_6{margin-left:50%}.offset_lg_7{margin-left:58.3333333333%}.offset_lg_8{margin-left:66.6666666667%}.offset_lg_9{margin-left:75%}.offset_lg_10{margin-left:83.3333333333%}.offset_lg_11{margin-left:91.6666666667%}}@media(min-width: 1200px){.col_xl_1{-webkit-box-flex:0;-ms-flex:0 0 8.3333333333%;flex:0 0 8.3333333333%;max-width:8.3333333333%}.col_xl_2{-webkit-box-flex:0;-ms-flex:0 0 16.6666666667%;flex:0 0 16.6666666667%;max-width:16.6666666667%}.col_xl_3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col_xl_4{-webkit-box-flex:0;-ms-flex:0 0 33.3333333333%;flex:0 0 33.3333333333%;max-width:33.3333333333%}.col_xl_5{-webkit-box-flex:0;-ms-flex:0 0 41.6666666667%;flex:0 0 41.6666666667%;max-width:41.6666666667%}.col_xl_6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col_xl_7{-webkit-box-flex:0;-ms-flex:0 0 58.3333333333%;flex:0 0 58.3333333333%;max-width:58.3333333333%}.col_xl_8{-webkit-box-flex:0;-ms-flex:0 0 66.6666666667%;flex:0 0 66.6666666667%;max-width:66.6666666667%}.col_xl_9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col_xl_10{-webkit-box-flex:0;-ms-flex:0 0 83.3333333333%;flex:0 0 83.3333333333%;max-width:83.3333333333%}.col_xl_11{-webkit-box-flex:0;-ms-flex:0 0 91.6666666667%;flex:0 0 91.6666666667%;max-width:91.6666666667%}.col_xl_12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.offset_xl_0{margin-left:0}.offset_xl_1{margin-left:8.3333333333%}.offset_xl_2{margin-left:16.6666666667%}.offset_xl_3{margin-left:25%}.offset_xl_4{margin-left:33.3333333333%}.offset_xl_5{margin-left:41.6666666667%}.offset_xl_6{margin-left:50%}.offset_xl_7{margin-left:58.3333333333%}.offset_xl_8{margin-left:66.6666666667%}.offset_xl_9{margin-left:75%}.offset_xl_10{margin-left:83.3333333333%}.offset_xl_11{margin-left:91.6666666667%}}.page_pwaPg h1,.page_pwaPg h2,.page_pwaPg h3{font-family:var(--font_title);margin:0;padding:0}.page_pwaPg .h1Ttl{font-size:32px !important}.page_pwaPg .h2Ttl{font-size:24px !important}.page_pwaPg .h3Ttl{font-size:19.2px !important}.page_pwaPg .h1Ttl,.page_pwaPg .h2Ttl,.page_pwaPg .h3Ttl{color:var(--color_text);font-weight:700 !important;line-height:1.3 !important}.page_pwaPg p,.page_pwaPg i{font-family:var(--font_body);line-height:1.3;margin:0;padding:0;font-style:normal}.page_pwaPg .bodyTxt{color:var(--color_text);font-weight:500 !important;line-height:1.3 !important;font-size:16px !important}.page_pwaPg .bodyTxt b{font-weight:700}.page_pwaPg .bodyTxtSm{color:var(--color_text);font-weight:500;line-height:1.3;font-size:14.4px}.page_pwaPg .bodyTxtSm b{font-weight:700}.page_pwaPg a{color:var(--color_link);text-decoration:none}.page_pwaPg .btn{text-decoration:none;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;line-height:1;background:#fff;padding:12.8px 32px;border-radius:40px;text-decoration:none;font-weight:600;font-size:16px;border:2px solid var(--color_main);color:var(--color_main)}@media(max-width: 460px){.page_pwaPg{overflow-x:hidden}}.page_pwaPg img{display:inline-block !important;margin:0 !important}.page-daltonismo .topBanner .row{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.page-daltonismo .topBanner .row .imgBanner{text-align:left}@media(max-width: 460px){.page-daltonismo .topBanner .row .imgBanner{text-align:center}.page-daltonismo .topBanner .row .imgBanner img{width:85%;height:auto}}.page-daltonismo .topBanner .row .text{text-align:right}@media(max-width: 460px){.page-daltonismo .topBanner .row .text{text-align:center}}.page-daltonismo .topBanner .row .text .h1Ttl{margin:0 0 16px 0}.page-daltonismo .topBanner .row .text .h1Ttl span{color:var(--color_textAlt2)}.page-daltonismo .topBanner .row .text .bodyTxt{margin:0 0 16px 0}.page-daltonismo .midText{text-align:center;margin:32px 0;padding:32px 0;background:#e9f6ff;position:relative}.page-daltonismo .midText:before{content:"";background:#e9f6ff;width:100vw;height:100%;top:0;left:50%;position:absolute;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);z-index:-1}.page-daltonismo .midText .bodyTxt{margin:0 0 16px 0}.page-daltonismo .midText .bodyTxt:last-child{margin:0}.page-daltonismo .ishiBanner .row{-webkit-box-align:center;-ms-flex-align:center;align-items:center}@media(max-width: 460px){.page-daltonismo .ishiBanner .row{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}}.page-daltonismo .ishiBanner .row .imgBanner{text-align:right}@media(max-width: 460px){.page-daltonismo .ishiBanner .row .imgBanner{text-align:center}.page-daltonismo .ishiBanner .row .imgBanner img{width:85%;height:auto}}.page-daltonismo .ishiBanner .row .text{text-align:left}@media(max-width: 460px){.page-daltonismo .ishiBanner .row .text{text-align:center}}.page-daltonismo .ishiBanner .row .text .h1Ttl{margin:0 0 16px 0}.page-daltonismo .ishiBanner .row .text .h1Ttl span{color:var(--color_textAlt2)}.page-daltonismo .ishiBanner .row .text .bodyTxt{margin:0 0 16px 0}.page-daltonismo .adviceBox{position:relative;margin:64px 0 32px}.page-daltonismo .adviceBox .topTtl{position:absolute;top:-52px;left:0px;padding:16px 16px 32px 16px;background:#f0efff;border-radius:16px}.page-daltonismo .adviceBox .topTtl:before{content:"";position:absolute;width:0px;height:0;background:rgba(0,0,0,0);top:8px;right:-49px;border-left:25px solid #f0efff;border-bottom:25px solid #f0efff;border-top:25px solid rgba(0,0,0,0);border-right:25px solid rgba(0,0,0,0)}.page-daltonismo .adviceBox .midBox{background:#f0efff;border-radius:16px;position:relative}@media(max-width: 460px){.page-daltonismo .adviceBox .midBox{padding:16px}}.page-daltonismo .adviceBox .midBox .row{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.page-daltonismo .adviceBox .midBox .row .bodyTxt{padding:16px}@media(max-width: 460px){.page-daltonismo .adviceBox .midBox .row .bodyTxt{padding:0;margin:0 0 16px 0}}.page-daltonismo .adviceBox .midBox .row .img{position:absolute;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}@media(max-width: 460px){.page-daltonismo .adviceBox .midBox .row .img{position:relative;top:unset;-webkit-transform:translateY(0%);-ms-transform:translateY(0%);transform:translateY(0%);text-align:center}}.page-daltonismo .ishiharaTestWrap{background-color:#f0f0f0;padding:64px 0;margin:120px 0 0 0;position:relative}.page-daltonismo .ishiharaTestWrap:before{content:"";background:#f0f0f0;width:100vw;height:100%;top:0;left:50%;position:absolute;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);z-index:-1}.page-daltonismo .ishiharaTestWrap .ishiharaTest{background:#fff;width:80%;margin:auto;-webkit-box-shadow:5px 5px 10px rgba(0,0,0,.3);box-shadow:5px 5px 10px rgba(0,0,0,.3);border-radius:16px;overflow:hidden;height:476px}@media(max-width: 460px){.page-daltonismo .ishiharaTestWrap .ishiharaTest{height:auto}}.page-daltonismo .ishiharaTestWrap .ishiharaTest .init{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}@media(max-width: 460px){.page-daltonismo .ishiharaTestWrap .ishiharaTest .init{height:100%}}.page-daltonismo .ishiharaTestWrap .ishiharaTest .init .imgWrap{width:356px}.page-daltonismo .ishiharaTestWrap .ishiharaTest .init .imgWrap img{width:auto;max-width:inherit}@media(max-width: 460px){.page-daltonismo .ishiharaTestWrap .ishiharaTest .init .imgWrap{display:none}}.page-daltonismo .ishiharaTestWrap .ishiharaTest .init .text{-webkit-box-sizing:content-box;box-sizing:content-box;width:calc(100% - 356px);padding:80px;text-align:center}@media(max-width: 460px){.page-daltonismo .ishiharaTestWrap .ishiharaTest .init .text{width:100%;padding:16px 24px}}.page-daltonismo .ishiharaTestWrap .ishiharaTest .init .text .bodyTxt{margin:0 0 32px 0}.page-daltonismo .ishiharaTestWrap .ishiharaTest .init .text .bodyTxt:last-child{margin:0 0 0 0;font-size:12.8px}.page-daltonismo .ishiharaTestWrap .ishiharaTest .init .text .btn{margin:0 0 32px 0;background:#65dbad;border:thin solid #65dbad;color:#fff;cursor:pointer}.page-daltonismo .ishiharaTestWrap .ishiharaTest .test{position:relative}.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step{padding:32px;width:100%;height:476px;position:relative;-webkit-box-sizing:border-box;box-sizing:border-box;display:none}@media(max-width: 460px){.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step{height:auto;padding:16px}}.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step .top{text-align:center;margin:0 0 32px 0}.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step .mid{display:-webkit-box;display:-ms-flexbox;display:flex}@media(max-width: 460px){.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step .mid{-ms-flex-wrap:wrap;flex-wrap:wrap}.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step .mid img{width:80%}}.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step .mid .imgIshi{width:50%;text-align:center}@media(max-width: 460px){.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step .mid .imgIshi{width:100%}}.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step .mid .formIshi{width:50%;text-align:center}@media(max-width: 460px){.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step .mid .formIshi{width:100%;margin:32px 0 80px 0}}.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step .mid .formIshi .errorText{color:#e27d7d;margin:0 0 16px 0;display:none}.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step .mid .formIshi .fieldform .item{margin:0 auto 16px auto;width:50%;position:relative}@media(max-width: 460px){.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step .mid .formIshi .fieldform .item{width:80%}}.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step .mid .formIshi .fieldform .item input[type=radio]{position:absolute;visibility:hidden}.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step .mid .formIshi .fieldform .item label{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;line-height:1;background:#fff;padding:12.8px 32px;border-radius:40px;text-decoration:none;font-weight:600;font-size:16px;border:2px solid #999;color:#999;cursor:pointer;-webkit-transition:all 300ms ease-in-out;transition:all 300ms ease-in-out}.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step .mid .formIshi .fieldform .item input[type=radio]:checked~label{background:#e4fff2;color:var(--color_text);-webkit-box-shadow:5px 5px 10px rgba(0,0,0,.3);box-shadow:5px 5px 10px rgba(0,0,0,.3);border:thin solid rgba(0,0,0,0)}.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step .bottom{position:absolute;bottom:0;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step .bottom .page{padding:16px 48px;background:#f0f0f0;border-radius:8px 8px 0 0;color:var(--color_text);position:relative}.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step .bottom .page:before{content:"";position:absolute;top:3px;left:-47px;background:rgba(0,0,0,0);border-top:25px solid rgba(0,0,0,0);border-right:25px solid #f0f0f0;border-bottom:25px solid #f0f0f0;border-left:25px solid rgba(0,0,0,0)}.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step .bottom .page:after{content:"";position:absolute;top:3px;right:-47px;background:rgba(0,0,0,0);border-top:25px solid rgba(0,0,0,0);border-right:25px solid rgba(0,0,0,0);border-bottom:25px solid #f0f0f0;border-left:25px solid #f0f0f0}.page-daltonismo .ishiharaTestWrap .ishiharaTest .test .step.active{display:block}.page-daltonismo .ishiharaTestWrap .ishiharaTest .finish{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.page-daltonismo .ishiharaTestWrap .ishiharaTest .finish .fin{display:-webkit-box;display:-ms-flexbox;display:flex}.page-daltonismo .ishiharaTestWrap .ishiharaTest .finish .fin .imgWrap{width:356px}@media(max-width: 460px){.page-daltonismo .ishiharaTestWrap .ishiharaTest .finish .fin .imgWrap{display:none}}.page-daltonismo .ishiharaTestWrap .ishiharaTest .finish .fin .text{-webkit-box-sizing:content-box;box-sizing:content-box;width:calc(100% - 356px);padding:80px;text-align:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}@media(max-width: 460px){.page-daltonismo .ishiharaTestWrap .ishiharaTest .finish .fin .text{width:100%;padding:16px}}.page-daltonismo .ishiharaTestWrap .ishiharaTest .finish .fin .text .icon{margin:0 0 16px 0}.page-daltonismo .ishiharaTestWrap .ishiharaTest .finish .fin .text .h2Ttl{margin:0 0 16px 0}.page-daltonismo .ishiharaTestWrap .ishiharaTest .finish .fin .text .bodyTxt{margin:0 0 32px 0}.page-daltonismo .ishiharaTestWrap .ishiharaTest .finish .fin .text .bodyTxt:last-child{margin:0 0 0 0;font-size:12.8px}.page-daltonismo .ishiharaTestWrap .ishiharaTest .finish .fin .text .bodyTxt.bodyTxtAdvice{color:#e27d7d;font-weight:900;font-size:16px}.page-daltonismo .ishiharaTestWrap .ishiharaTest .finish .fin .text .btn{margin:0 0 32px 0;background:#65dbad;border:thin solid #65dbad;color:#fff}.page-daltonismo .ishiharaTestWrap .ishiharaTest .steps{display:none}.page-daltonismo .ishiharaTestWrap .ishiharaTest .steps.steps_active{display:-webkit-box;display:-ms-flexbox;display:flex}
+</style>
+
+<div class="container_pwaPg page_pwaPg page-daltonismo">
+    
+    <div class="topBanner">
+        <div class="row">
+            <div class="col_xl_6">
+                <div class="text">
+                    <h1 class="h1Ttl">
+                        ¿Qué es el <br><span>daltonismo?</span>
+                    </h1>
+                    <p class="bodyTxt"><b>El daltonismo es la dificultad de ver colores como el rojo o el verde,</b> y existen los casos más graves, en los que la persona no ve los colores. Esta dificultad tiene un origen genético, pero también puede provenir de alguna lesión ocular o neurológica.</p>
+                </div>
+            </div>
+            <div class="col_xl_6">
+                <div class="imgBanner">
+                    <img src="{{media url='wysiwyg/new_landings/daltonismo/topBanner.png'}}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="midText">
+        <div class="row">
+            <div class="col_xl_10 offset_xl_1">
+                <p class="bodyTxt">Caracterizado por una falla en el desarrollo de uno o más de los tres juegos de <b>conos que reconocen los colores y como el problema es genético,</b> está ligado al cromosoma X, es decir, se presenta en la mayoría de los hombres porque el sexo masculino tiene solo uno. cromosoma X, mientras que el daltonismo en las mujeres es bastante raro porque las mujeres tienen dos cromosomas X.</p>
+                <p class="bodyTxt">Desafortunadamente, <b>el daltonismo no tiene cura</b> y, por lo tanto, el diagnóstico temprano puede ayudar mucho a los niños a adaptarse.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ishiBanner">
+        <div class="row">
+            <div class="col_xl_6">
+                <div class="imgBanner">
+                    <img src="{{media url='wysiwyg/new_landings/daltonismo/ishihara.png'}}" alt="">
+                </div>
+            </div>
+            <div class="col_xl_6">
+                <div class="text">
+                    <h2 class="h2Ttl">
+                        Prueba de color de Ishihara
+                    </h2>
+                    <p class="bodyTxt">En 1917 el Dr. Shinobu Ishihara, profesor de la Universidad de Tokio creó y desarrolló la prueba más conocida como Ishihara Color Test.</p>
+                    <p class="bodyTxt">Este examen es un conjunto de tarjetas impresas que consisten en números o formas dibujadas por círculos de colores que forman un círculo más grande. Estos formularios se presentan al paciente durante el examen y, de acuerdo con las respuestas, se crea un diagnóstico del grado de daltonismo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="adviceBox">
+        <div class="topTtl">
+            <p class="h2Ttl">Aviso:</p>
+        </div>
+        <div class="midBox">
+            <div class="row">
+                <div class="col_xl_9">
+                    <p class="bodyTxt">
+                        Esta prueba consta de varias imágenes impresas en tarjetas y debe ser realizada en <b>el consultorio de su médico por su oftalmólogo.</b> Vale la pena recordar que las imágenes que se ven en <b>una pantalla digital pueden cambiar, ya que cada pantalla/dispositivo puede tener una configuración diferente.</b>
+                    </p>
+                </div>
+                <div class="col_xl_3">
+                    <div class="img">
+                        <img src="{{media url='wysiwyg/new_landings/daltonismo/pcAdvice.png'}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ishiharaTestWrap">
+        <div class="ishiharaTest">
+            <div class="init steps steps_active" id="dalto_step-init">
+                <div class="imgWrap">
+                    <img src="{{media url='wysiwyg/new_landings/daltonismo/sideTest.png'}}" alt="">
+                </div>
+                <div class="text">
+                    <p class="bodyTxt">
+                        Realiza la prueba de la vista de Ishihara para comprobar el daltonismo*.
+                    </p>
+                    <p class="bodyTxt">
+                        También se conoce como la prueba de la placa de Ishihara.
+                    </p>
+                    <button class="btn" id="dalto_initTest">Comenzar Test</button>
+                    <div class="bodyTxt">*Ten en cuenta que esta prueba es realizada con fines ilustrativos. para realizar una prueba verídica debes visitar tu optómetra de confianza. </div>
+                </div>
+            </div>
+            <div class="test steps" id="dalto_step-test">
+                <form>
+                    <div class="step step_1 active" id="dalto-step_1">
+                        <div class="top">
+                            <p class="bodyTxt">Tienes que introducir el número de las opciones que veas en cada disco. Si no puedes ver ninguno, selecciona la opción de “no veo número”</p>
+                        </div>
+                        <div class="mid">
+                            <div class="imgIshi">
+                                <img src="{{media url='wysiwyg/new_landings/daltonismo/imgDaltonismo1.jpg'}}" alt="">
+                            </div>
+                            <div class="formIshi">
+                                <div class="errorText" id="errorText_1">
+                                    Selecciona una opcion para continuar
+                                </div>
+                                <div class="fieldform">
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step1" id="step1_1" value="8">
+                                        <label for="step1_1">8</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step1" id="step1_2" value="3">
+                                        <label for="step1_2">3</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step1" id="step1_3" value="2">
+                                        <label for="step1_3">2</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step1" id="step1_4" value="No">
+                                        <label for="step1_4">No veo número</label>
+                                    </div>
+                                </div>
+                                <button class="btn dalto_stepBtn" id="dalto_stepBtn_1" data-step="1" type="button">Continuar</button>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="page">
+                                1 / 9
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step_2" id="dalto-step_2">
+                        <div class="top">
+                            <p class="bodyTxt">Tienes que introducir el número de las opciones que veas en cada disco. Si no puedes ver ninguno, selecciona la opción de “no veo número”</p>
+                        </div>
+                        <div class="mid">
+                            <div class="imgIshi">
+                                <img src="{{media url='wysiwyg/new_landings/daltonismo/imgDaltonismo2.jpg'}}" alt="">
+                            </div>
+                            <div class="formIshi">
+                                <div class="errorText" id="errorText_2">
+                                    Selecciona una opcion para continuar
+                                </div>
+                                <div class="fieldform">
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step2" id="step2_1" value="8">
+                                        <label for="step2_1">8</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step2" id="step2_2" value="6">
+                                        <label for="step2_2">6</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step2" id="step2_3" value="9">
+                                        <label for="step2_3">9</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step2" id="step2_4" value="No">
+                                        <label for="step2_4">No veo número</label>
+                                    </div>
+                                </div>
+                                <button class="btn dalto_stepBtn" id="dalto_stepBtn_2" data-step="2" type="button">Continuar</button>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="page">
+                                2 / 9
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step_3" id="dalto-step_3">
+                        <div class="top">
+                            <p class="bodyTxt">Tienes que introducir el número de las opciones que veas en cada disco. Si no puedes ver ninguno, selecciona la opción de “no veo número”</p>
+                        </div>
+                        <div class="mid">
+                            <div class="imgIshi">
+                                <img src="{{media url='wysiwyg/new_landings/daltonismo/imgDaltonismo3.jpg'}}" alt="">
+                            </div>
+                            <div class="formIshi">
+                                <div class="errorText" id="errorText_3">
+                                    Selecciona una opcion para continuar
+                                </div>
+                                <div class="fieldform">
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step3" id="step3_1" value="0">
+                                        <label for="step3_1">0</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step3" id="step3_2" value="8">
+                                        <label for="step3_2">8</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step3" id="step3_3" value="6">
+                                        <label for="step3_3">6</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step3" id="step3_4" value="No">
+                                        <label for="step3_4">No veo número</label>
+                                    </div>
+                                </div>
+                                <button class="btn dalto_stepBtn" id="dalto_stepBtn_3" data-step="3" type="button">Continuar</button>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="page">
+                                3 / 9
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step_4" id="dalto-step_4">
+                        <div class="top">
+                            <p class="bodyTxt">Tienes que introducir el número de las opciones que veas en cada disco. Si no puedes ver ninguno, selecciona la opción de “no veo número”</p>
+                        </div>
+                        <div class="mid">
+                            <div class="imgIshi">
+                                <img src="{{media url='wysiwyg/new_landings/daltonismo/imgDaltonismo4.jpg'}}" alt="">
+                            </div>
+                            <div class="formIshi">
+                                <div class="errorText" id="errorText_4">
+                                    Selecciona una opcion para continuar
+                                </div>
+                                <div class="fieldform">
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step4" id="step4_1" value="12">
+                                        <label for="step4_1">12</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step4" id="step4_2" value="15">
+                                        <label for="step4_2">15</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step4" id="step4_3" value="13">
+                                        <label for="step4_3">13</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step4" id="step4_4" value="No">
+                                        <label for="step4_4">No veo número</label>
+                                    </div>
+                                </div>
+                                <button class="btn dalto_stepBtn" id="dalto_stepBtn_4" data-step="4" type="button">Continuar</button>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="page">
+                                4 / 9
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step_5" id="dalto-step_5">
+                        <div class="top">
+                            <p class="bodyTxt">Tienes que introducir el número de las opciones que veas en cada disco. Si no puedes ver ninguno, selecciona la opción de “no veo número”</p>
+                        </div>
+                        <div class="mid">
+                            <div class="imgIshi">
+                                <img src="{{media url='wysiwyg/new_landings/daltonismo/imgDaltonismo5.jpg'}}" alt="">
+                            </div>
+                            <div class="formIshi">
+                                <div class="errorText" id="errorText_5">
+                                    Selecciona una opcion para continuar
+                                </div>
+                                <div class="fieldform">
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step5" id="step5_1" value="14">
+                                        <label for="step5_1">14</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step5" id="step5_2" value="74">
+                                        <label for="step5_2">74</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step5" id="step5_3" value="71">
+                                        <label for="step5_3">71</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step5" id="step5_4" value="No">
+                                        <label for="step5_4">No veo número</label>
+                                    </div>
+                                </div>
+                                <button class="btn dalto_stepBtn" id="dalto_stepBtn_5" data-step="5" type="button">Continuar</button>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="page">
+                                5 / 9
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step_6" id="dalto-step_6">
+                        <div class="top">
+                            <p class="bodyTxt">Tienes que introducir el número de las opciones que veas en cada disco. Si no puedes ver ninguno, selecciona la opción de “no veo número”</p>
+                        </div>
+                        <div class="mid">
+                            <div class="imgIshi">
+                                <img src="{{media url='wysiwyg/new_landings/daltonismo/imgDaltonismo6.jpg'}}" alt="">
+                            </div>
+                            <div class="formIshi">
+                                <div class="errorText" id="errorText_6">
+                                    Selecciona una opcion para continuar
+                                </div>
+                                <div class="fieldform">
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step6" id="step6_1" value="28">
+                                        <label for="step6_1">28</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step6" id="step6_2" value="20">
+                                        <label for="step6_2">20</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step6" id="step6_3" value="29">
+                                        <label for="step6_3">29</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step6" id="step6_4" value="No">
+                                        <label for="step6_4">No veo número</label>
+                                    </div>
+                                </div>
+                                <button class="btn dalto_stepBtn" id="dalto_stepBtn_6" data-step="6" type="button">Continuar</button>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="page">
+                                6 / 9
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step_7" id="dalto-step_7">
+                        <div class="top">
+                            <p class="bodyTxt">Tienes que introducir el número de las opciones que veas en cada disco. Si no puedes ver ninguno, selecciona la opción de “no veo número”</p>
+                        </div>
+                        <div class="mid">
+                            <div class="imgIshi">
+                                <img src="{{media url='wysiwyg/new_landings/daltonismo/imgDaltonismo7.jpg'}}" alt="">
+                            </div>
+                            <div class="formIshi">
+                                <div class="errorText" id="errorText_7">
+                                    Selecciona una opcion para continuar
+                                </div>
+                                <div class="fieldform">
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step7" id="step7_1" value="1">
+                                        <label for="step7_1">1</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step7" id="step7_2" value="7">
+                                        <label for="step7_2">7</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step7" id="step7_3" value="9">
+                                        <label for="step7_3">9</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step7" id="step7_4" value="No">
+                                        <label for="step7_4">No veo número</label>
+                                    </div>
+                                </div>
+                                <button class="btn dalto_stepBtn" id="dalto_stepBtn_7" data-step="7" type="button">Continuar</button>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="page">
+                                7 / 9
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step_8" id="dalto-step_8">
+                        <div class="top">
+                            <p class="bodyTxt">Tienes que introducir el número de las opciones que veas en cada disco. Si no puedes ver ninguno, selecciona la opción de “no veo número”</p>
+                        </div>
+                        <div class="mid">
+                            <div class="imgIshi">
+                                <img src="{{media url='wysiwyg/new_landings/daltonismo/imgDaltonismo8.jpg'}}" alt="">
+                            </div>
+                            <div class="formIshi">
+                                <div class="errorText" id="errorText_8">
+                                    Selecciona una opcion para continuar
+                                </div>
+                                <div class="fieldform">
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step8" id="step8_1" value="51">
+                                        <label for="step8_1">51</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step8" id="step8_2" value="57">
+                                        <label for="step8_2">57</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step8" id="step8_3" value="59">
+                                        <label for="step8_3">59</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step8" id="step8_4" value="No">
+                                        <label for="step8_4">No veo número</label>
+                                    </div>
+                                </div>
+                                <button class="btn dalto_stepBtn" id="dalto_stepBtn_8" data-step="8" type="button">Continuar</button>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="page">
+                                8 / 9
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step_9" id="dalto-step_9">
+                        <div class="top">
+                            <p class="bodyTxt">Tienes que introducir el número de las opciones que veas en cada disco. Si no puedes ver ninguno, selecciona la opción de “no veo número”</p>
+                        </div>
+                        <div class="mid">
+                            <div class="imgIshi">
+                                <img src="{{media url='wysiwyg/new_landings/daltonismo/imgDaltonismo9.jpg'}}" alt="">
+                            </div>
+                            <div class="formIshi">
+                                <div class="errorText" id="errorText_9">
+                                    Selecciona una opcion para continuar
+                                </div>
+                                <div class="fieldform">
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step9" id="step9_1" value="6">
+                                        <label for="step9_1">6</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step9" id="step9_2" value="5">
+                                        <label for="step9_2">5</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step9" id="step9_3" value="8">
+                                        <label for="step9_3">8</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="radio" class="testRad" name="step9" id="step9_4" value="No">
+                                        <label for="step9_4">No veo número</label>
+                                    </div>
+                                </div>
+                                <button class="btn dalto_stepBtn" id="dalto_stepBtn_9" data-step="9" type="button">Continuar</button>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="page">
+                                9 / 9
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="finish steps" id="dalto_step-finish">
+
+                <div class="fin">
+                    <div class="imgWrap">
+                        <img src="{{media url='wysiwyg/new_landings/daltonismo/sideTest.png'}}" alt="">
+                    </div>
+                    <div class="text">
+                        <div>
+                            <div class="icon">
+                                <img id="dalto_testResp-img" src="{{media url='wysiwyg/new_landings/daltonismo/perfect.png'}}" alt="">
+                            </div>
+                            <h2 class="h2Ttl">Diagnóstico</h2>
+                            <p class="bodyTxt">
+                                <b id="dalto_testResp-txt">Visión del color normal</b><br> Resultado de la prueba: <span id="dalto_testResp">100 % (18/18)</span>
+                            </p>
+                            <div class="bodyTxt bodyTxtAdvice">*Ten en cuenta que esta prueba es realizada con fines ilustrativos. para realizar una prueba verídica debes visitar tu optómetra de confianza. </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    setTimeout(() => {
+        
+        const initTest = document.getElementById( "dalto_initTest" );
+        const initStep = document.getElementById( "dalto_step-init" );
+        const testStep = document.getElementById( "dalto_step-test" );
+        const finishStep = document.getElementById( "dalto_step-finish" );
+    
+        const stepBtn = document.querySelectorAll(".dalto_stepBtn")
+    
+        initTest.addEventListener("click", function() {
+            initStep.classList.remove("steps_active")
+            testStep.classList.add("steps_active")
+        })
+    
+        getValue = ( step ) => {
+            const rads = document.getElementsByName(`step${ step }`);
+            let value = "";
+    
+            for (let r = 0; r < rads.length; r++) {
+                const element = rads[r];
+    
+                if ( element.checked ) {
+                    value = element.value;
+                }
+            }
+            return value;
+    
+        }
+    
+        const trueValues = ['3', '8', '6', '12', '74', '29', '7', '57', '5'];
+        const currValues = [];
+    
+        const allRads = document.getElementsByClassName( "testRad" );
+        for (let r = 0; r < allRads.length; r++) {
+            const element = allRads[r];
+    
+            element.addEventListener("click", () => {
+                console.log( element );
+            })
+        }
+    
+        btnValidate = () => {
+    
+        }
+        btnValidate();
+    
+        getResults = () => {
+            let currPerc = 0;
+            let currCorrect = 0;
+    
+            for (let f = 0; f < trueValues.length; f++) {
+                const element = trueValues[f];
+                
+                if (element == currValues[f] ) {
+                    currPerc = currPerc + 11.111111;
+                    currCorrect = currCorrect + 1;
+                }
+            }
+            
+            const testResp_img = document.getElementById("dalto_testResp-img");
+            const testResp_txt = document.getElementById("dalto_testResp-txt");
+            const testResp = document.getElementById("dalto_testResp");
+    
+            testResp.innerHTML = `${ Math.round( currPerc ) }% ( ${currCorrect} / 9 )`;
+            if ( currPerc < 100 && currPerc >= 90 ) {
+                testResp_img.setAttribute("src","{{media url='wysiwyg/new_landings/daltonismo/perfec'}}t.png");
+                testResp_txt.innerHTML = "Visión del color normal"
+            } else if ( currPerc <= 89 && currPerc >= 66 ) {
+                testResp_img.setAttribute("src","{{media url='wysiwyg/new_landings/daltonismo/goo'}}d.png");
+                testResp_txt.innerHTML = "Ligera deficiencia de visión del color"
+            } else if ( currPerc <= 65 && currPerc >= 44 ) {
+                testResp_img.setAttribute("src","{{media url='wysiwyg/new_landings/daltonismo/ba'}}d.png");
+                testResp_txt.innerHTML = "Moderada deficiencia de visión del color"
+            } else if ( currPerc <= 43 && currPerc >= 0 ) {
+                testResp_img.setAttribute("src","{{media url='wysiwyg/new_landings/daltonismo/fai'}}l.png");
+                testResp_txt.innerHTML = "Severa deficiencia de visión del color"
+            }
+        }
+    
+        stepBtn.forEach(element => {
+            element.addEventListener("click", ( evt ) => {
+                const evtStep = evt.target.getAttribute("data-step");
+    
+                if ( getValue(evtStep) == '' ) {
+                    document.getElementById(`errorText_${evtStep}`).style.display = "block";
+                    return;
+                } else {
+                    currValues.push( getValue(evtStep) );
+    
+                    document.getElementById(`dalto-step_${ parseInt(evtStep)}`).classList.remove("active");
+                    if ( parseInt(evtStep) <= 8 ) {
+                        document.getElementById(`dalto-step_${ parseInt(evtStep) + 1}`).classList.add("active");
+                    } else {
+                        testStep.classList.remove("steps_active");
+                        finishStep.classList.add("steps_active");
+    
+                        getResults();
+                    }
+    
+                }
+    
+            })
+        });
+
+    }, 5000);
+
+</script>

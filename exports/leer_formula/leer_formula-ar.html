@@ -1,0 +1,340 @@
+<!-- Como leer formula V2.8 -->
+
+<style>
+    @import"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,600;0,800;1,400&display=swap";@import"https://fonts.googleapis.com/css2?family=Asap:wght@200;400;600;800&display=swap";:root{--font_title: "Gilroy","Montserrat", sans-serif;--font_body: "Asap", sans-serif;font-family:var(--font_title);--color_main: #80ACE0;--color_text: #2D668C;--color_textAlt: #9F98E2;--color_textAlt2: #E27D7D;--color_link: #007BFF}.container_pwaPg{width:100%;padding-right:16px;padding-left:16px;margin-right:auto;margin-left:auto}@media(min-width: 0)and (max-width: 576px){.container_pwaPg{padding-right:0;padding-left:0}}@media(min-width: 576px){.container_pwaPg{max-width:540px}}@media(min-width: 768px){.container_pwaPg{max-width:720px}}@media(min-width: 992px){.container_pwaPg{max-width:960px}}@media(min-width: 1200px){.container_pwaPg{max-width:1140px}}.container_pwaPg_fluid{width:100%;padding-right:0;padding-left:0;margin-right:auto;margin-left:auto}.container_pwaPg .row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-top:16px;margin-bottom:16px;margin-right:-16px;margin-left:-16px}@media(min-width: 0)and (max-width: 576px){.container_pwaPg .row{margin-right:0;margin-left:0}}.container_pwaPg_fluid .row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-top:16px;margin-bottom:16px;padding-right:16px;padding-left:16px}@media(min-width: 0)and (max-width: 576px){.container_pwaPg_fluid .row{padding-right:0;padding-left:0}}.col_xl_12,.col_xl_11,.col_xl_10,.col_xl_9,.col_xl_8,.col_xl_7,.col_xl_6,.col_xl_5,.col_xl_4,.col_xl_3,.col_xl_2,.col_xl_1,.col_lg_12,.col_lg_11,.col_lg_10,.col_lg_9,.col_lg_8,.col_lg_7,.col_lg_6,.col_lg_5,.col_lg_4,.col_lg_3,.col_lg_2,.col_lg_1,.col_md_12,.col_md_11,.col_md_10,.col_md_9,.col_md_8,.col_md_7,.col_md_6,.col_md_5,.col_md_4,.col_md_3,.col_md_2,.col_md_1,.col_sm_12,.col_sm_11,.col_sm_10,.col_sm_9,.col_sm_8,.col_sm_7,.col_sm_6,.col_sm_5,.col_sm_4,.col_sm_3,.col_sm_2,.col_sm_1,.col_xs_12,.col_xs_11,.col_xs_10,.col_xs_9,.col_xs_8,.col_xs_7,.col_xs_6,.col_xs_5,.col_xs_4,.col_xs_3,.col_xs_2,.col_xs_1{position:relative;width:100%;min-height:1px;-webkit-box-sizing:border-box;box-sizing:border-box;padding-right:16px;padding-left:16px}@media(min-width: 0)and (max-width: 576px){.col_xl_12,.col_xl_11,.col_xl_10,.col_xl_9,.col_xl_8,.col_xl_7,.col_xl_6,.col_xl_5,.col_xl_4,.col_xl_3,.col_xl_2,.col_xl_1,.col_lg_12,.col_lg_11,.col_lg_10,.col_lg_9,.col_lg_8,.col_lg_7,.col_lg_6,.col_lg_5,.col_lg_4,.col_lg_3,.col_lg_2,.col_lg_1,.col_md_12,.col_md_11,.col_md_10,.col_md_9,.col_md_8,.col_md_7,.col_md_6,.col_md_5,.col_md_4,.col_md_3,.col_md_2,.col_md_1,.col_sm_12,.col_sm_11,.col_sm_10,.col_sm_9,.col_sm_8,.col_sm_7,.col_sm_6,.col_sm_5,.col_sm_4,.col_sm_3,.col_sm_2,.col_sm_1,.col_xs_12,.col_xs_11,.col_xs_10,.col_xs_9,.col_xs_8,.col_xs_7,.col_xs_6,.col_xs_5,.col_xs_4,.col_xs_3,.col_xs_2,.col_xs_1{padding-right:5.3333333333px;padding-left:5.3333333333px}}@media(min-width: 0){.col_xs_1{-webkit-box-flex:0;-ms-flex:0 0 8.3333333333%;flex:0 0 8.3333333333%;max-width:8.3333333333%}.col_xs_2{-webkit-box-flex:0;-ms-flex:0 0 16.6666666667%;flex:0 0 16.6666666667%;max-width:16.6666666667%}.col_xs_3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col_xs_4{-webkit-box-flex:0;-ms-flex:0 0 33.3333333333%;flex:0 0 33.3333333333%;max-width:33.3333333333%}.col_xs_5{-webkit-box-flex:0;-ms-flex:0 0 41.6666666667%;flex:0 0 41.6666666667%;max-width:41.6666666667%}.col_xs_6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col_xs_7{-webkit-box-flex:0;-ms-flex:0 0 58.3333333333%;flex:0 0 58.3333333333%;max-width:58.3333333333%}.col_xs_8{-webkit-box-flex:0;-ms-flex:0 0 66.6666666667%;flex:0 0 66.6666666667%;max-width:66.6666666667%}.col_xs_9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col_xs_10{-webkit-box-flex:0;-ms-flex:0 0 83.3333333333%;flex:0 0 83.3333333333%;max-width:83.3333333333%}.col_xs_11{-webkit-box-flex:0;-ms-flex:0 0 91.6666666667%;flex:0 0 91.6666666667%;max-width:91.6666666667%}.col_xs_12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.offset_xs_0{margin-left:0}.offset_xs_1{margin-left:8.3333333333%}.offset_xs_2{margin-left:16.6666666667%}.offset_xs_3{margin-left:25%}.offset_xs_4{margin-left:33.3333333333%}.offset_xs_5{margin-left:41.6666666667%}.offset_xs_6{margin-left:50%}.offset_xs_7{margin-left:58.3333333333%}.offset_xs_8{margin-left:66.6666666667%}.offset_xs_9{margin-left:75%}.offset_xs_10{margin-left:83.3333333333%}.offset_xs_11{margin-left:91.6666666667%}}@media(min-width: 576px){.col_sm_1{-webkit-box-flex:0;-ms-flex:0 0 8.3333333333%;flex:0 0 8.3333333333%;max-width:8.3333333333%}.col_sm_2{-webkit-box-flex:0;-ms-flex:0 0 16.6666666667%;flex:0 0 16.6666666667%;max-width:16.6666666667%}.col_sm_3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col_sm_4{-webkit-box-flex:0;-ms-flex:0 0 33.3333333333%;flex:0 0 33.3333333333%;max-width:33.3333333333%}.col_sm_5{-webkit-box-flex:0;-ms-flex:0 0 41.6666666667%;flex:0 0 41.6666666667%;max-width:41.6666666667%}.col_sm_6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col_sm_7{-webkit-box-flex:0;-ms-flex:0 0 58.3333333333%;flex:0 0 58.3333333333%;max-width:58.3333333333%}.col_sm_8{-webkit-box-flex:0;-ms-flex:0 0 66.6666666667%;flex:0 0 66.6666666667%;max-width:66.6666666667%}.col_sm_9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col_sm_10{-webkit-box-flex:0;-ms-flex:0 0 83.3333333333%;flex:0 0 83.3333333333%;max-width:83.3333333333%}.col_sm_11{-webkit-box-flex:0;-ms-flex:0 0 91.6666666667%;flex:0 0 91.6666666667%;max-width:91.6666666667%}.col_sm_12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.offset_sm_0{margin-left:0}.offset_sm_1{margin-left:8.3333333333%}.offset_sm_2{margin-left:16.6666666667%}.offset_sm_3{margin-left:25%}.offset_sm_4{margin-left:33.3333333333%}.offset_sm_5{margin-left:41.6666666667%}.offset_sm_6{margin-left:50%}.offset_sm_7{margin-left:58.3333333333%}.offset_sm_8{margin-left:66.6666666667%}.offset_sm_9{margin-left:75%}.offset_sm_10{margin-left:83.3333333333%}.offset_sm_11{margin-left:91.6666666667%}}@media(min-width: 768px){.col_md_1{-webkit-box-flex:0;-ms-flex:0 0 8.3333333333%;flex:0 0 8.3333333333%;max-width:8.3333333333%}.col_md_2{-webkit-box-flex:0;-ms-flex:0 0 16.6666666667%;flex:0 0 16.6666666667%;max-width:16.6666666667%}.col_md_3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col_md_4{-webkit-box-flex:0;-ms-flex:0 0 33.3333333333%;flex:0 0 33.3333333333%;max-width:33.3333333333%}.col_md_5{-webkit-box-flex:0;-ms-flex:0 0 41.6666666667%;flex:0 0 41.6666666667%;max-width:41.6666666667%}.col_md_6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col_md_7{-webkit-box-flex:0;-ms-flex:0 0 58.3333333333%;flex:0 0 58.3333333333%;max-width:58.3333333333%}.col_md_8{-webkit-box-flex:0;-ms-flex:0 0 66.6666666667%;flex:0 0 66.6666666667%;max-width:66.6666666667%}.col_md_9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col_md_10{-webkit-box-flex:0;-ms-flex:0 0 83.3333333333%;flex:0 0 83.3333333333%;max-width:83.3333333333%}.col_md_11{-webkit-box-flex:0;-ms-flex:0 0 91.6666666667%;flex:0 0 91.6666666667%;max-width:91.6666666667%}.col_md_12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.offset_md_0{margin-left:0}.offset_md_1{margin-left:8.3333333333%}.offset_md_2{margin-left:16.6666666667%}.offset_md_3{margin-left:25%}.offset_md_4{margin-left:33.3333333333%}.offset_md_5{margin-left:41.6666666667%}.offset_md_6{margin-left:50%}.offset_md_7{margin-left:58.3333333333%}.offset_md_8{margin-left:66.6666666667%}.offset_md_9{margin-left:75%}.offset_md_10{margin-left:83.3333333333%}.offset_md_11{margin-left:91.6666666667%}}@media(min-width: 992px){.col_lg_1{-webkit-box-flex:0;-ms-flex:0 0 8.3333333333%;flex:0 0 8.3333333333%;max-width:8.3333333333%}.col_lg_2{-webkit-box-flex:0;-ms-flex:0 0 16.6666666667%;flex:0 0 16.6666666667%;max-width:16.6666666667%}.col_lg_3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col_lg_4{-webkit-box-flex:0;-ms-flex:0 0 33.3333333333%;flex:0 0 33.3333333333%;max-width:33.3333333333%}.col_lg_5{-webkit-box-flex:0;-ms-flex:0 0 41.6666666667%;flex:0 0 41.6666666667%;max-width:41.6666666667%}.col_lg_6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col_lg_7{-webkit-box-flex:0;-ms-flex:0 0 58.3333333333%;flex:0 0 58.3333333333%;max-width:58.3333333333%}.col_lg_8{-webkit-box-flex:0;-ms-flex:0 0 66.6666666667%;flex:0 0 66.6666666667%;max-width:66.6666666667%}.col_lg_9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col_lg_10{-webkit-box-flex:0;-ms-flex:0 0 83.3333333333%;flex:0 0 83.3333333333%;max-width:83.3333333333%}.col_lg_11{-webkit-box-flex:0;-ms-flex:0 0 91.6666666667%;flex:0 0 91.6666666667%;max-width:91.6666666667%}.col_lg_12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.offset_lg_0{margin-left:0}.offset_lg_1{margin-left:8.3333333333%}.offset_lg_2{margin-left:16.6666666667%}.offset_lg_3{margin-left:25%}.offset_lg_4{margin-left:33.3333333333%}.offset_lg_5{margin-left:41.6666666667%}.offset_lg_6{margin-left:50%}.offset_lg_7{margin-left:58.3333333333%}.offset_lg_8{margin-left:66.6666666667%}.offset_lg_9{margin-left:75%}.offset_lg_10{margin-left:83.3333333333%}.offset_lg_11{margin-left:91.6666666667%}}@media(min-width: 1200px){.col_xl_1{-webkit-box-flex:0;-ms-flex:0 0 8.3333333333%;flex:0 0 8.3333333333%;max-width:8.3333333333%}.col_xl_2{-webkit-box-flex:0;-ms-flex:0 0 16.6666666667%;flex:0 0 16.6666666667%;max-width:16.6666666667%}.col_xl_3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col_xl_4{-webkit-box-flex:0;-ms-flex:0 0 33.3333333333%;flex:0 0 33.3333333333%;max-width:33.3333333333%}.col_xl_5{-webkit-box-flex:0;-ms-flex:0 0 41.6666666667%;flex:0 0 41.6666666667%;max-width:41.6666666667%}.col_xl_6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col_xl_7{-webkit-box-flex:0;-ms-flex:0 0 58.3333333333%;flex:0 0 58.3333333333%;max-width:58.3333333333%}.col_xl_8{-webkit-box-flex:0;-ms-flex:0 0 66.6666666667%;flex:0 0 66.6666666667%;max-width:66.6666666667%}.col_xl_9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col_xl_10{-webkit-box-flex:0;-ms-flex:0 0 83.3333333333%;flex:0 0 83.3333333333%;max-width:83.3333333333%}.col_xl_11{-webkit-box-flex:0;-ms-flex:0 0 91.6666666667%;flex:0 0 91.6666666667%;max-width:91.6666666667%}.col_xl_12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.offset_xl_0{margin-left:0}.offset_xl_1{margin-left:8.3333333333%}.offset_xl_2{margin-left:16.6666666667%}.offset_xl_3{margin-left:25%}.offset_xl_4{margin-left:33.3333333333%}.offset_xl_5{margin-left:41.6666666667%}.offset_xl_6{margin-left:50%}.offset_xl_7{margin-left:58.3333333333%}.offset_xl_8{margin-left:66.6666666667%}.offset_xl_9{margin-left:75%}.offset_xl_10{margin-left:83.3333333333%}.offset_xl_11{margin-left:91.6666666667%}}.page_pwaPg h1,.page_pwaPg h2,.page_pwaPg h3{font-family:var(--font_title);margin:0;padding:0}.page_pwaPg .h1Ttl{font-size:32px !important}.page_pwaPg .h2Ttl{font-size:24px !important}.page_pwaPg .h3Ttl{font-size:19.2px !important}.page_pwaPg .h1Ttl,.page_pwaPg .h2Ttl,.page_pwaPg .h3Ttl{color:var(--color_text);font-weight:700 !important;line-height:1.3 !important}.page_pwaPg p,.page_pwaPg i{font-family:var(--font_body);line-height:1.3;margin:0;padding:0;font-style:normal}.page_pwaPg .bodyTxt{color:var(--color_text);font-weight:500 !important;line-height:1.3 !important;font-size:16px !important}.page_pwaPg .bodyTxt b{font-weight:700}.page_pwaPg .bodyTxtSm{color:var(--color_text);font-weight:500;line-height:1.3;font-size:14.4px}.page_pwaPg .bodyTxtSm b{font-weight:700}.page_pwaPg a{color:var(--color_link);text-decoration:none}.page_pwaPg .btn{text-decoration:none;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;line-height:1;background:#fff;padding:12.8px 32px;border-radius:40px;text-decoration:none;font-weight:600;font-size:16px;border:2px solid var(--color_main);color:var(--color_main)}@media(max-width: 460px){.page_pwaPg{overflow-x:hidden}}.page_pwaPg img{display:inline-block !important;margin:0 !important}.page-leer_formula .topBanner{position:relative}.page-leer_formula .topBanner:before{content:"";position:absolute;width:100%;height:70%;background:#e9f6ff;border-radius:16px;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}@media(max-width: 460px){.page-leer_formula .topBanner:before{top:0%;-webkit-transform:translateY(0%);-ms-transform:translateY(0%);transform:translateY(0%)}}.page-leer_formula .topBanner .row{-webkit-box-align:center;-ms-flex-align:center;align-items:center}@media(max-width: 460px){.page-leer_formula .topBanner .row{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}}.page-leer_formula .topBanner .bannerImg{text-align:center}@media(max-width: 460px){.page-leer_formula .topBanner .bannerImg img{width:85%;height:auto}}@media(max-width: 460px){.page-leer_formula .topBanner .bannerText{padding:32px 16px}}.page-leer_formula .topBanner .bannerText h1.h1Ttl{margin:0 0 16px 0}.page-leer_formula .topBanner .bannerText p.bodyTxt{width:80%}@media(max-width: 460px){.page-leer_formula .topBanner .bannerText p.bodyTxt{width:100%}}.page-leer_formula .topBanner .supportBox{position:absolute;bottom:0;right:0px;padding:16px 10px 10px 10px;background:#e9f6ff;border-radius:0 0 16px 16px}@media(max-width: 460px){.page-leer_formula .topBanner .supportBox{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background:rgba(0,0,0,0);padding:10px 10px 24px 10px}}.page-leer_formula .topBanner .supportBox:before{content:"";position:absolute;width:0px;height:0;background:rgba(0,0,0,0);top:0;left:-79px;border-top:40px solid #e9f6ff;border-right:40px solid #e9f6ff;border-bottom:40px solid rgba(0,0,0,0);border-left:40px solid rgba(0,0,0,0)}@media(max-width: 460px){.page-leer_formula .topBanner .supportBox:before{display:none}}.page-leer_formula .topBanner .supportBox a{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:var(--color_text);text-decoration:none;background:#ffe6e6;width:310px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;border-radius:50px}.page-leer_formula .topBanner .supportBox a b{font-family:var(--font_title);font-weight:700;display:block}.page-leer_formula .topBanner .supportBox a i{font-family:var(--font_body);display:block}.page-leer_formula .adviceBanner{position:relative}@media(max-width: 460px){.page-leer_formula .adviceBanner{padding:8px 0}}.page-leer_formula .adviceBanner:before{content:"";position:absolute;width:100%;height:65%;background:#ffe6e6;border-radius:16px;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}@media(max-width: 460px){.page-leer_formula .adviceBanner:before{height:100%}}.page-leer_formula .adviceBanner .row{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.page-leer_formula .adviceBanner .bannerImg{text-align:right}@media(max-width: 460px){.page-leer_formula .adviceBanner .bannerImg img{width:90%;height:auto}}.page-leer_formula .formulaWrap{background:#f0f0f0;padding:16px 0;position:relative}.page-leer_formula .formulaWrap:before{content:"";background:#f0f0f0;width:100vw;height:100%;top:0;left:50%;position:absolute;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);z-index:-1}.page-leer_formula .formulaWrap .bodyTxt{text-align:center;margin:16px 0}.page-leer_formula .formulaWrap .formulaPaper{background:#fff;-webkit-box-shadow:5px 5px 10px rgba(0,0,0,.2);box-shadow:5px 5px 10px rgba(0,0,0,.2);margin:16px 0;border-radius:16px}.page-leer_formula .formulaWrap .formulaPaper .toolWrap{position:relative;cursor:pointer}.page-leer_formula .formulaWrap .formulaPaper .toolWrap .toolTip{display:inline-block;position:absolute;z-index:20;background:#e9f6ff;-webkit-box-shadow:5px 5px 10px rgba(0,0,0,.2);box-shadow:5px 5px 10px rgba(0,0,0,.2);width:200px;top:30px;left:calc(100% - 40px);border-radius:8px;pointer-events:none;-webkit-transform:translateY(50px);-ms-transform:translateY(50px);transform:translateY(50px);opacity:0;-webkit-transition:all 300ms ease-in-out;transition:all 300ms ease-in-out}.page-leer_formula .formulaWrap .formulaPaper .toolWrap .toolTip:before{content:"";width:16px;height:16px;background:var(--color_main);position:absolute;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);top:-8px;left:23px}@media(max-width: 460px){.page-leer_formula .formulaWrap .formulaPaper .toolWrap .toolTip:before{display:none}}.page-leer_formula .formulaWrap .formulaPaper .toolWrap .toolTip b.h3Ttl{background:var(--color_main);display:block;margin:0;padding:8px;border-radius:8px 8px 0 0;color:#fff;text-align:left}.page-leer_formula .formulaWrap .formulaPaper .toolWrap .toolTip i.bodyTxtSm{padding:8px;display:block;text-align:left;margin:0}.page-leer_formula .formulaWrap .formulaPaper .toolWrap.toolWrapBttm .toolTip{top:auto;bottom:33px;-webkit-transform:translateY(-50px);-ms-transform:translateY(-50px);transform:translateY(-50px)}.page-leer_formula .formulaWrap .formulaPaper .toolWrap.toolWrapBttm .toolTip:before{background:#e9f6ff;top:auto;bottom:-8px}.page-leer_formula .formulaWrap .formulaPaper .toolWrap:hover .toolTip{-webkit-transform:translateY(0px);-ms-transform:translateY(0px);transform:translateY(0px);opacity:1}.page-leer_formula .formulaWrap .formulaPaper .toolWrap:hover.toolWrapBttm .toolTip{-webkit-transform:translateY(0px);-ms-transform:translateY(0px);transform:translateY(0px)}.page-leer_formula .formulaWrap .formulaPaper .top{padding:16px}@media(max-width: 460px){.page-leer_formula .formulaWrap .formulaPaper .top{padding:8px}}.page-leer_formula .formulaWrap .formulaPaper .top .row{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.page-leer_formula .formulaWrap .formulaPaper .top .logoWrap{text-align:right}@media(max-width: 460px){.page-leer_formula .formulaWrap .formulaPaper .top .logoWrap{text-align:center}}.page-leer_formula .formulaWrap .formulaPaper .top .datosTxt p{margin:0 0 8px 0;color:var(--color_text)}.page-leer_formula .formulaWrap .formulaPaper .top .datosTxt p b{font-family:var(--font_title);color:var(--color_main);font-weight:600;margin:0 8px 0 0}@media(max-width: 460px){.page-leer_formula .formulaWrap .formulaPaper .top .datosTxt p{font-size:14.4px}}.page-leer_formula .formulaWrap .formulaPaper .mid{text-align:center;margin:8px 0}@media(max-width: 460px){.page-leer_formula .formulaWrap .formulaPaper .mid img{width:90%}}.page-leer_formula .formulaWrap .formulaPaper .formRecipe{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:16px 0}.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top{padding:0;display:-webkit-box;display:-ms-flexbox;display:flex}.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid{text-align:left;display:-webkit-box;display:-ms-flexbox;display:flex}.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top .cell,.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid .cell{width:50px;text-align:center;padding:8px 0}@media(max-width: 460px){.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top .cell,.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid .cell{width:30px}}@media(max-width: 460px){.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top .cell,.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid .cell{font-size:11.2px;font-weight:600}}.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top .cell.cellTtl,.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid .cell.cellTtl{font-family:var(--font_title);color:var(--color_text);font-weight:600}.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top .cell.cellEsf,.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid .cell.cellEsf{width:130px}@media(max-width: 460px){.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top .cell.cellEsf,.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid .cell.cellEsf{width:60px}}.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top .cell.cellCyl,.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid .cell.cellCyl{width:130px}@media(max-width: 460px){.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top .cell.cellCyl,.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid .cell.cellCyl{width:60px}}.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top .cell.cellAxi,.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid .cell.cellAxi{width:90px}@media(max-width: 460px){.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top .cell.cellAxi,.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid .cell.cellAxi{width:40px}}.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top .cell.cellDia,.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid .cell.cellDia{width:100px}@media(max-width: 460px){.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top .cell.cellDia,.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid .cell.cellDia{width:65px}.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top .cell.cellDia .toolTip,.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid .cell.cellDia .toolTip{left:calc(100% - 100px)}}.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top .cell.cellAdi,.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid .cell.cellAdi{width:100px}@media(max-width: 460px){.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top .cell.cellAdi,.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid .cell.cellAdi{width:60px}.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top .cell.cellAdi .toolTip,.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid .cell.cellAdi .toolTip{left:calc(100% - 120px)}}.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top .cell.cellCur,.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid .cell.cellCur{width:110px}@media(max-width: 460px){.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top .cell.cellCur,.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid .cell.cellCur{width:60px}.page-leer_formula .formulaWrap .formulaPaper .formRecipe .top .cell.cellCur .toolTip,.page-leer_formula .formulaWrap .formulaPaper .formRecipe .mid .cell.cellCur .toolTip{left:calc(100% - 140px)}}.page-leer_formula .formulaWrap .formulaPaper .bottom{text-align:center;padding:0 0 32px 0}@media(max-width: 460px){.page-leer_formula .formulaWrap .formulaPaper .bottom{padding:0 8px 32px 8px}}.page-leer_formula .formulaWrap .formulaPaper .bottom p{font-family:var(--font_body);color:var(--color_main);font-weight:400}.page-leer_formula .boxesForm{padding:32px 0}@media(max-width: 460px){.page-leer_formula .boxesForm{padding:32px 0 0}}.page-leer_formula .boxesForm .textBox{display:-webkit-box;display:-ms-flexbox;display:flex;background:#f0efff;padding:32px 40px;border-radius:16px;min-height:250px;-webkit-box-align:center;-ms-flex-align:center;align-items:center}@media(max-width: 460px){.page-leer_formula .boxesForm .textBox{min-height:auto}}.page-leer_formula .boxesForm .textBox .h2Ttl{margin:0 0 16px 0}.page-leer_formula .boxesForm .boxes .imgs_box{opacity:0;position:absolute;-webkit-transform:translateY(50px);-ms-transform:translateY(50px);transform:translateY(50px);-webkit-transition:all 300ms ease-in-out;transition:all 300ms ease-in-out}.page-leer_formula .boxesForm .boxes .imgs_box.active{opacity:1;-webkit-transform:translateY(0px);-ms-transform:translateY(0px);transform:translateY(0px)}.page-leer_formula .boxesForm .boxes .boxTabs form{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;padding:16px 0 32px 0}.page-leer_formula .boxesForm .boxes .boxTabs form label input[type=radio]{position:absolute;visibility:hidden}.page-leer_formula .boxesForm .boxes .boxTabs form label span{border:thin solid #ccc;background:#fff;width:180px;border-radius:8px;padding:8px;display:block;text-align:center;font-family:var(--font_body);line-height:1.3;font-size:14.4px;color:var(--color_text)}@media(max-width: 460px){.page-leer_formula .boxesForm .boxes .boxTabs form label span{padding:8px 12.8px;width:auto}}.page-leer_formula .boxesForm .boxes .boxTabs form label .boxTypeRad:checked+span{border:thin solid #e9f6ff;background:#e9f6ff}.page-leer_formula .boxesForm .boxes .boxTabs .boxImages{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:24px 0}@media(max-width: 460px){.page-leer_formula .boxesForm .boxes .boxTabs .boxImages{height:140px}.page-leer_formula .boxesForm .boxes .boxTabs .boxImages img{width:90%;height:auto}}.page-leer_formula .calculadoraWrap{background:#ffe6e6;margin:60px 0 0 0;position:relative}.page-leer_formula .calculadoraWrap:before{content:"";background:#ffe6e6;width:100vw;height:100%;top:0;left:50%;position:absolute;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);z-index:-1}.page-leer_formula .calculadoraWrap .imgIco{position:absolute;top:-40px;left:-120px}@media(max-width: 460px){.page-leer_formula .calculadoraWrap .imgIco{display:none}}.page-leer_formula .calculadoraWrap .txtBox{padding:32px 0}@media(max-width: 460px){.page-leer_formula .calculadoraWrap .txtBox{padding:16px}}.page-leer_formula .calculadoraWrap .txtBox .h2Ttl,.page-leer_formula .calculadoraWrap .txtBox .bodyTxt{margin:0 0 16px 0}.page-leer_formula .calculadoraWrap .txtBox .btn{margin:0 0 16px 0}.page-leer_formula .calculadoraWrap .imgBox{position:relative;height:100%}.page-leer_formula .calculadoraWrap .imgBox img{position:absolute;bottom:0}@media(max-width: 460px){.page-leer_formula .calculadoraWrap .imgBox img{position:relative;width:100%}}.page-leer_formula .lensesTypes{padding:32px 0}.page-leer_formula .lensesTypes .topText{text-align:center}.page-leer_formula .lensesTypes .topText .h2Ttl,.page-leer_formula .lensesTypes .topText .bodyTxt{margin:0 0 16px 0}.page-leer_formula .lensesTypes .lensType .icon{background:#e9f6ff;width:130px;height:130px;border-radius:50%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-shadow:5px 5px 10px rgba(0,0,0,.2);box-shadow:5px 5px 10px rgba(0,0,0,.2);position:relative;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.page-leer_formula .lensesTypes .lensType .text{background:#fff;-webkit-box-shadow:5px 5px 10px rgba(0,0,0,.2);box-shadow:5px 5px 10px rgba(0,0,0,.2);border-radius:16px;text-align:center;padding:80px 16px 16px 16px;margin:-60px 0 0 0;height:440px}@media(max-width: 460px){.page-leer_formula .lensesTypes .lensType .text{margin:-60px 0 30px 0;height:auto}}.page-leer_formula .lensesTypes .lensType .text .h3Ttl{padding:8px 24px}@media(max-width: 460px){.page-leer_formula .lensesTypes .lensType .text .h3Ttl{padding:8px 16px}}.page-leer_formula .lensesTypes .lensType .text .bodyTxt{padding:8px 24px}@media(max-width: 460px){.page-leer_formula .lensesTypes .lensType .text .bodyTxt{padding:8px 16px}}
+</style>
+
+<div class="container_pwaPg page_pwaPg page-leer_formula">
+    <div class="topBanner">
+        <div class="row">
+
+            <div class="col_xl_6">
+                <div class="bannerImg">
+                    <img src="{{media url='wysiwyg/new_landings/leer_formula/topBanner.png'}}" alt="topBanner">
+                </div>
+            </div>
+            <div class="col_xl_6">
+                <div class="bannerText">
+                    <h1 class="h1Ttl">
+                        ¿Cómo leer tu receta oftálmica?
+                    </h1>
+                    <p class="bodyTxt">
+                        <b>Aprende cómo puedes interpretar correctamente tu receta oftálmica.</b> Tené presente que, si es la primera vez que utilizas lentes de contacto y no tienes una prescripción, debes visitar un optómetra para obtenerla.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="supportBox">
+            <a href="#" target="_blank">
+                <img src="{{media url='wysiwyg/new_landings/leer_formula/support.png'}}" alt="">
+                <span>
+                    <b>¿Tenes dudas?</b>
+                    <i>Visitá nuestro centro de ayuda</i>
+                </span>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="adviceBanner">
+        <div class="row">
+
+            <div class="col_xl_3 col_xs_3">
+                <div class="bannerImg">
+                    <img src="{{media url='wysiwyg/new_landings/leer_formula/advice_formula.png'}}" alt="topBanner">
+                </div>
+            </div>
+            <div class="col_xl_9 col_xs_9">
+                <div class="bannerText">
+                    <p class="bodyTxt">
+                        <b>La receta para lentes de contacto es diferente a la receta para gafas,</b> ya que la primera contiene información adicional como la curva base o el diámetro. Asegúrate de pedir a tu optómetra la receta adecuada para tus dispositivos de salud visual.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+    <div class="formulaWrap">
+        <div class="row">
+            <div class="col_xl_12">
+                <p class="bodyTxt">
+                    Podes realizar clic en los diferentes iconos de información ( <img src="{{media url='wysiwyg/new_landings/leer_formula/tootltip.png'}}" alt=""> ) para conocer más de tu receta.
+                </p>
+            </div>
+            <div class="col_xl_10 offset_xl_1">
+                <div class="formulaPaper">
+                    <div class="top">
+                        <div class="row">
+                            <div class="col_xl_2 col_xs_2">
+                                <div class="logoWrap">
+                                    <img src="{{media url='wysiwyg/new_landings/leer_formula/logoFormula.png'}}" alt="">
+                                </div>
+                            </div>
+                            <div class="col_xl_10 col_xs_10">
+                                <div class="row">
+                                    <div class="col_xl_6">
+                                        <div class="datosTxt">
+                                            <p><b>Nombre: </b>juan perez</p>
+                                            <p><b>Dirección: </b>Avenida Providencia 3234</p>
+                                        </div>
+                                    </div>
+                                    <div class="col_xl_6">
+                                        <div class="datosTxt">
+                                            <p><b>Fecha: </b>Fecha:</p>
+                                            <p>
+                                                <b class="toolWrap">Marca:<img src="{{media url='wysiwyg/new_landings/leer_formula/tootltip.png'}}" alt="">
+                                                <span class="toolTip">
+                                                    <b class="h3Ttl">Marca</b>
+                                                    <i class="bodyTxtSm">Nombre y marca de los lentes de contacto. Ejemplo: Acuvue 2, Air Optix Astigmatismo.</i>
+                                                </span></b>
+                                                Air Optix Hydraglyde Astigmatismo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="mid">
+                        <div class="col_xl_12">
+                            <img src="{{media url='wysiwyg/new_landings/leer_formula/formAxis.jpg'}}" alt="">
+                        </div>
+                    </div>
+                    <div class="formRecipe">
+                        <div class="tablFormula">
+                            <div class="top">
+                                <div class="cell">&nbsp;</div>
+                                <div class="cell cellTtl cellEsf">
+                                    <b class="toolWrap toolWrapBttm">Poder (Esfera) <img src="{{media url='wysiwyg/new_landings/leer_formula/tootltip.png'}}" alt="">
+                                        <span class="toolTip">
+                                            <b class="h3Ttl">Poder (Esfera)</b>
+                                            <i class="bodyTxtSm">Es la receta oftálmica para tus lentes de contacto.</i>
+                                        </span>
+                                    </b>
+                                </div>
+                                <div class="cell cellTtl cellCyl">
+                                    <b class="toolWrap toolWrapBttm">Cilindro (Cyl) <img src="{{media url='wysiwyg/new_landings/leer_formula/tootltip.png'}}" alt="">
+                                        <span class="toolTip">
+                                            <b class="h3Ttl">Cilindro (Cyl)</b>
+                                            <i class="bodyTxtSm">Corresponde a Cilindro y aplica para recetas de astigmatismo. Usualmente, es un número entre -4.00 y +4.00.</i>
+                                        </span>
+                                    </b>
+                                </div>
+                                <div class="cell cellTtl cellAxi">
+                                    <b class="toolWrap toolWrapBttm">Eje (Axis) <img src="{{media url='wysiwyg/new_landings/leer_formula/tootltip.png'}}" alt="">
+                                        <span class="toolTip">
+                                            <b class="h3Ttl">Eje (Axis)</b>
+                                            <i class="bodyTxtSm">Corresponde a Eje y aplica para recetas de astigmatismo.
+                                                Usualmente, es un número entre 0 y 180.</i>
+                                        </span>
+                                    </b>
+                                </div>
+                                <div class="cell cellTtl cellDia">
+                                    <b class="toolWrap toolWrapBttm">Diámetro <img src="{{media url='wysiwyg/new_landings/leer_formula/tootltip.png'}}" alt="">
+                                        <span class="toolTip">
+                                            <b class="h3Ttl">Diámetro</b>
+                                            <i class="bodyTxtSm">Hace referencia al diámetro de los lentes de contacto y se mide en milímetros. Ejemplo: 14.5mm.</i>
+                                        </span>
+                                    </b>
+                                </div>
+                                <div class="cell cellTtl cellAdi">
+                                    <b class="toolWrap toolWrapBttm">Adicional <img src="{{media url='wysiwyg/new_landings/leer_formula/tootltip.png'}}" alt="">
+                                        <span class="toolTip">
+                                            <b class="h3Ttl">Adicional</b>
+                                            <i class="bodyTxtSm">Esta información solo se muestra cuando el paciente vive con presbicia. Corresponde a la corrección adicional para corregir esta afección en lentes de contacto bifocales o multifocales.</i>
+                                        </span>
+                                    </b>
+                                </div>
+                                <div class="cell cellTtl cellCur">
+                                    <b class="toolWrap toolWrapBttm">Curva base <img src="{{media url='wysiwyg/new_landings/leer_formula/tootltip.png'}}" alt="">
+                                        <span class="toolTip">
+                                            <b class="h3Ttl">Curva base</b>
+                                            <i class="bodyTxtSm">Hace referencia a la Curva Base de los lentes de contacto. Esta medida debe coincidir con la curvatura del ojo, y así darle una mayor estabilidad. Ejemplo: 8.0 / 8.6 / 9.0.</i>
+                                        </span>
+                                    </b>
+                                </div>
+                            </div>
+                            <div class="mid">
+                                <div class="cell cellTtl">OD:</div>
+                                <div class="cell cellEsf">-0.75</div>
+                                <div class="cell cellCyl">-0.75</div>
+                                <div class="cell cellAxi">160</div>
+                                <div class="cell cellDia">8.6</div>
+                                <div class="cell cellAdi">+2.00</div>
+                                <div class="cell cellCur">14.5</div>
+                            </div>
+                            <div class="mid">
+                                <div class="cell cellTtl">OI:</div>
+                                <div class="cell cellEsf">-2.75</div>
+                                <div class="cell cellCyl">-0.75</div>
+                                <div class="cell cellAxi">160</div>
+                                <div class="cell cellDia">8.6</div>
+                                <div class="cell cellAdi">+2.00</div>
+                                <div class="cell cellCur">14.5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>*Imagen de referencia (receta astigmatismo / presbicia)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="boxesForm">
+        <div class="row">
+            <div class="col_xl_4">
+                <div class="textBox">
+                    <div>
+                        <h2 class="h2Ttl">
+                            ¿Cómo encuentro mi receta en la caja de mis lentes de contacto?
+                        </h2>
+                        <p class="bodyTxt">Revisa que la información de tus lentes de contacto coincida con la de tu receta oftálmica.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col_xl_8">
+                <div class="boxes">
+                    <div class="boxTabs">
+                        <form>
+                            <label for="boxType_miopia" id="lbl_boxType_miopia">
+                                <input type="radio" class="boxTypeRad" name="boxType" id="boxType_miopia" checked>
+                                <span>Lentes para Miopía<br> o Hipermetropía</span>
+                            </label>
+                            <label for="boxType_astig" id="lbl_boxType_astig">
+                                <input type="radio" class="boxTypeRad" name="boxType" id="boxType_astig">
+                                <span>Lentes para<br> Astigmatismo</span>
+                            </label>
+                            <label for="boxType_presbi" id="lbl_boxType_presbi">
+                                <input type="radio" class="boxTypeRad" name="boxType" id="boxType_presbi">
+                                <span>Lentes para<br> Presbicia</span>
+                            </label>
+                        </form>
+                        <div class="boxImages">
+                            <img class="imgs_box active" id="miopia_box" src="{{media url='wysiwyg/new_landings/leer_formula/miopia-box.png'}}" alt="">
+                            <img class="imgs_box" id="astig_box" src="{{media url='wysiwyg/new_landings/leer_formula/astig-box.png'}}" alt="">
+                            <img class="imgs_box" id="presbi_box" src="{{media url='wysiwyg/new_landings/leer_formula/presbi-box.png'}}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="calculadoraWrap">
+        <div class="row">
+            <div class="col_xl_5 offset_xl_1">
+                <div class="imgIco">
+                    <img src="{{media url='wysiwyg/new_landings/leer_formula/calculadoraIco.png'}}" alt="">
+                </div>
+                <div class="txtBox">
+                    <h2 class="h2Ttl">¡Convierte tu receta de gafas a lentes de contacto!</h2>
+                    <p class="bodyTxt">Convierte fácilmente la receta de tus gafas oftálmicas a los parámetros correspondientes de lentes de contacto.</p>
+                    <a class="btn" href="#" target="_blank" rel="noopener noreferrer">
+                        Ir a calculadora
+                    </a>
+                    <p class="bodyTxtSm">* Las calculadoras están diseñadas para ayudar a los profesionales de la visión, pero no pretenden reemplazar la adaptación profesional de lentes de contacto por parte de un profesional de la visión calificado.</p>
+                </div>
+            </div>
+            <div class="col_xl_6">
+                <div class="imgBox">
+                    <img src="{{media url='wysiwyg/new_landings/leer_formula/calculadora.png'}}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lensesTypes">
+        <div class="row">
+            <div class="col_xl_12">
+                <div class="topText">
+                    <h2 class="h2Ttl">Tipos de lentes de contacto</h2>
+                    <p class="bodyTxt">Que tal aprender un poco más sobre ellos. <b>¿Sabías que hay más de un tipo de lente de contacto?</b></p>
+                    <p class="bodyTxt">Básicamente, el tipo de lente de contacto que corrige la miopía o la hipermetropía, no es el mismo que corrige el astigmatismo, que también es diferente del utilizado en la corrección de la presbicia. vamos por partes:</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col_xl_4">
+                <div class="lensType">
+                    <div class="icon">
+                        <img src="{{media url='wysiwyg/new_landings/leer_formula/lentes_esferico.png'}}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3 class="h3Ttl">Lentes esféricas:</h3>
+                        <p class="bodyTxt">Empecemos con los más comunes y conocidos: las lentes de contacto esféricas.</p>
+                        <p class="bodyTxt">Se utilizan en corrección de miopía (-) e hipermetropía (+).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col_xl_4">
+                <div class="lensType">
+                    <div class="icon">
+                        <img src="{{media url='wysiwyg/new_landings/leer_formula/lentes_torico.png'}}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3 class="h3Ttl">Lentes tóricas:</h3>
+                        <p class="bodyTxt">El nombre te puede dejar un poco confuso pero las lentes tóricas son utilizados para corrección de astigmatismo, uno de los problemas visuales más comúnes y que alcanzan a una gran parte de la población.</p>
+                        <p class="bodyTxt">Estos lentes tienen una forma cercana a una “dona” y tienen propiedades refráctivas diferentes, lo que ayuda en la corrección de la visión.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col_xl_4">
+                <div class="lensType">
+                    <div class="icon">
+                        <img src="{{media url='wysiwyg/new_landings/leer_formula/lentes_presbi.png'}}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3 class="h3Ttl">Lentes multifocales:</h3>
+                        <p class="bodyTxt">En cuanto a los multifocales para corregir la presbicia, también conocido como ojos cansados ​​o “síndrome del brazo corto”, asociado o no con otros problemas de refracción.</p>
+                        <p class="bodyTxt">Ofrecen corrección para diferentes distancias</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    setTimeout(() => {
+        
+        // BOX TYPE SCRIPT
+        const check_miopia = document.getElementById("boxType_miopia");
+        const check_astig = document.getElementById("boxType_astig");
+        const check_presbi = document.getElementById("boxType_presbi");
+    
+        const img_miopia = document.getElementById("miopia_box");
+        const img_astig = document.getElementById("astig_box");
+        const img_presbi = document.getElementById("presbi_box");
+        
+        function checkTypeBox() {
+            img_miopia.classList.remove("active");
+            img_astig.classList.remove("active");
+            img_presbi.classList.remove("active");
+    
+            if (check_miopia.checked) {
+                img_miopia.classList.add("active");            
+            } else if (check_astig.checked) {
+                img_astig.classList.add("active");            
+            } else if (check_presbi.checked) {
+                img_presbi.classList.add("active");            
+            }
+        }
+        checkTypeBox();
+    
+        document.getElementById("lbl_boxType_miopia").addEventListener("click", () => {checkTypeBox()} )
+        document.getElementById("lbl_boxType_astig").addEventListener("click", () => {checkTypeBox()} )
+        document.getElementById("lbl_boxType_presbi").addEventListener("click", () => {checkTypeBox()} )
+
+    }, 5000);
+
+</script>

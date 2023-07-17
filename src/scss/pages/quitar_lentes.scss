@@ -249,6 +249,7 @@
             hr {
                 width: 10%;
                 border: thin solid var(--color_text);
+                margin: auto;
                 
                 @include media_phone() {
                     width: 20%;

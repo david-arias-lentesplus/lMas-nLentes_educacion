@@ -113,7 +113,7 @@
         }
 
         &.adviceBox2 {
-            margin: calc($remSize * 6) 0 0 0;
+            margin: calc($remSize * 6) 0 calc($remSize * 6) 0;
 
             .topTtl {
                 background: #F0EFFF;
@@ -353,6 +353,7 @@
             hr {
                 width: 10%;
                 border: thin solid var(--color_text);
+                margin: auto;
                 
                 @include media_phone() {
                     width: 20%;

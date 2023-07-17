@@ -202,6 +202,11 @@
                 .imgWrap {
                     width: 356px;
 
+                    img {
+                        width: auto;
+                        max-width: inherit;
+                    }
+
                     @include media_phone() {
                         display: none;
                     }

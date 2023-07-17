@@ -38,9 +38,20 @@
 
 // = = = = = = = = 
 
-
 // components
 
 @import "../shared/components";
 
 // = = = = = = = = 
+
+.page_pwaPg {
+
+    @include media_phone() {
+        overflow-x: hidden;
+    }
+
+    img {
+        display: inline-block !important;
+        margin: 0 !important;
+    }
+}

@@ -174,7 +174,85 @@
             box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
             margin: $remSize 0;
             border-radius: $remSize;
-            overflow: hidden;
+
+            .toolWrap {
+                position: relative;
+                cursor: pointer;
+
+                .toolTip {
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 20;
+                    background: #E9F6FF;
+                    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+                    width: 200px;
+                    top: 30px;
+                    left: calc( 100% - 40px);
+                    border-radius: 8px;
+                    pointer-events: none;
+                    transform: translateY(50px);
+                    opacity: 0;
+
+                    @include transitionAll(300ms);
+
+                    &:before {
+                        content: "";
+                        width: 16px;
+                        height: 16px;
+                        background: var(--color_main);
+                        position: absolute;
+                        transform: rotate(45deg);
+                        top: -8px;
+                        left: 23px;
+
+                        @include media_phone() {
+                            display: none;
+                        }
+                    }
+
+                    b.h3Ttl {
+                        background: var( --color_main );
+                        display: block;
+                        margin: 0;
+                        padding: 8px;
+                        border-radius: 8px 8px 0 0;
+                        color: white;
+                        text-align: left;
+                    }
+                    i.bodyTxtSm {
+                        padding: 8px;
+                        display: block;
+                        text-align: left;
+                        margin: 0;
+                    }
+                }
+
+                &.toolWrapBttm {
+                    .toolTip {
+                        top: auto;
+                        bottom: 33px;
+                        transform: translateY(-50px);
+
+                        &:before {
+                            background: #E9F6FF;
+                            top: auto;
+                            bottom: -8px;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .toolTip {
+                        transform: translateY(00px);
+                        opacity: 1;
+                    }
+                    &.toolWrapBttm {
+                        .toolTip {
+                            transform: translateY(0px);
+                        }
+                    }
+                }
+            }
             
             .top {
                 padding: $remSize;
@@ -286,6 +364,10 @@
                             
                             @include media_phone() {
                                 width: 65px;
+
+                                .toolTip {
+                                    left: calc(100% - 100px);
+                                }
                             }
                         }
                         &.cellAdi {
@@ -293,6 +375,10 @@
                             
                             @include media_phone() {
                                 width: 60px;
+
+                                .toolTip {
+                                    left: calc(100% - 120px);
+                                }
                             }
                         }
                         &.cellCur {
@@ -300,6 +386,10 @@
 
                             @include media_phone() {
                                 width: 60px;
+
+                                .toolTip {
+                                    left: calc(100% - 140px);
+                                }
                             }
                         }
                     }
@@ -321,80 +411,7 @@
                 }
             }
 
-            .toolWrap {
-                position: relative;
-                cursor: pointer;
-
-                .toolTip {
-                    display: inline-block;
-                    position: absolute;
-                    z-index: 20;
-                    background: #E9F6FF;
-                    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-                    width: 200px;
-                    top: 30px;
-                    left: calc( 100% - 40px);
-                    border-radius: 8px;
-                    pointer-events: none;
-                    transform: translateY(50px);
-                    opacity: 0;
-
-                    @include transitionAll(300ms);
-
-                    &:before {
-                        content: "";
-                        width: 16px;
-                        height: 16px;
-                        background: var(--color_main);
-                        position: absolute;
-                        transform: rotate(45deg);
-                        top: -8px;
-                        left: 23px;
-                    }
-
-                    b.h3Ttl {
-                        background: var( --color_main );
-                        display: block;
-                        margin: 0;
-                        padding: 8px;
-                        border-radius: 8px 8px 0 0;
-                        color: white;
-                        text-align: left;
-                    }
-                    i.bodyTxtSm {
-                        padding: 8px;
-                        display: block;
-                        text-align: left;
-                        margin: 0;
-                    }
-                }
-
-                &.toolWrapBttm {
-                    .toolTip {
-                        top: auto;
-                        bottom: 33px;
-                        transform: translateY(-50px);
-
-                        &:before {
-                            background: #E9F6FF;
-                            top: auto;
-                            bottom: -8px;
-                        }
-                    }
-                }
-
-                &:hover {
-                    .toolTip {
-                        transform: translateY(00px);
-                        opacity: 1;
-                    }
-                    &.toolWrapBttm {
-                        .toolTip {
-                            transform: translateY(0px);
-                        }
-                    }
-                }
-            }
+            
         }
     }
 
@@ -495,6 +512,7 @@
 
     .calculadoraWrap {
         background: #FFE6E6;
+        margin: 60px 0 0 0;
 
         @include bgAllpage( #FFE6E6 );
 
@@ -571,7 +589,7 @@
                 text-align: center;
                 padding: 80px $remSize $remSize $remSize;
                 margin: -60px 0 0 0;
-                height: 340px;
+                height: 440px;
                 
                 @include media_phone() {
                     margin: -60px 0 30px 0;
